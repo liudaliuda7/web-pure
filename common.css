@@ -5,6 +5,7 @@ body * {
 body {
   font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma, Arial,
     PingFang SC-Light, Microsoft YaHei;
+  margin: 0;
 }
 input {
   background-color: transparent;
@@ -65,4 +66,22 @@ button:active {
 .align-end {
   display: flex;
   align-items: flex-end;
+}
+@font-face {
+  font-family: 'D-DINCondensed-Bold'; /* 自定义字体名称 */
+  src: url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.otf') format('otf'),
+    /* 字体文件路径 */ url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.ttf') format('ttf'),
+    url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff') format('woff'),
+    url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff2') format('woff2');
+  font-weight: normal; /* 字体粗细 */
+  font-style: normal; /* 字体样式 */
+}
+@font-face {
+  font-family: 'D-DINCondensed'; /* 自定义字体名称 */
+  src: url('font/D-DIN-Condensed-Bold/D-DINCondensed.otf') format('otf'),
+    /* 字体文件路径 */ url('font/D-DIN-Condensed-Bold/D-DINCondensed.ttf') format('ttf'),
+    url('font/D-DIN-Condensed-Bold/D-DINCondensed.woff') format('woff'),
+    url('font/D-DIN-Condensed-Bold/D-DINCondensed.woff2') format('woff2');
+  font-weight: normal; /* 字体粗细 */
+  font-style: normal; /* 字体样式 */
 }
