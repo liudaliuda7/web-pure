@@ -42,14 +42,17 @@
           </div>
         </div>
         <span class="text_12"
-          >EXPLORING&nbsp;A&nbsp;
-          <br/>SUSTAINABLE&nbsp;FUTURE
-          <br/>&nbsp;WITH&nbsp;PURE&nbsp;POWER</span
+          >EXPLORING&nbsp;A&nbsp; <br />SUSTAINABLE&nbsp;FUTURE
+          <br />&nbsp;WITH&nbsp;PURE&nbsp;POWER</span
         >
         <div class="text-wrapper_5 flex-row">
-          <span class="text_13">Empowering&nbsp;Innovations&nbsp;in&nbsp;the&nbsp;Industry</span>
-          <span class="text_14">Inspiring&nbsp;Positive&nbsp;Change&nbsp;in&nbsp;Society</span>
-          <span class="text_15"
+          <span class="text_13" onclick="scrollToSection('text_13')"
+            >Empowering&nbsp;Innovations&nbsp;in&nbsp;the&nbsp;Industry</span
+          >
+          <span class="text_14" onclick="scrollToSection('text_14')"
+            >Inspiring&nbsp;Positive&nbsp;Change&nbsp;in&nbsp;Society</span
+          >
+          <span class="text_15" onclick="scrollToSection('text_15')"
             >Leading&nbsp;the&nbsp;Way&nbsp;to&nbsp;a&nbsp;Sustainable&nbsp;Future</span
           >
         </div>
@@ -60,18 +63,24 @@
         /> -->
       </div>
       <div class="block_3 flex-col">
-        <div class="block_48 flex-row">
-          <div class="block_4 flex-col"></div>
-          <div class="text-wrapper_77 flex-col justify-between">
-            <span class="text_16">Empowering&nbsp;Innovations&nbsp;in&nbsp;the&nbsp;Industry</span>
-            <span class="text_17">Inspiring&nbsp;Positive&nbsp;Change&nbsp;in&nbsp;Society</span>
-            <span class="text_18"
-              >Leading&nbsp;the&nbsp;Way&nbsp;to&nbsp;a&nbsp;Sustainable&nbsp;Future</span
+        <div class="pure-menu-box flex-row">
+          <div class="block_4 flex-col" id="pure-menu-tag"></div>
+          <div class="text-wrapper_77 flex-col justify-between" id="pure-menu">
+            <span class="text_16" id="menu-text-13" onclick="scrollToSection('text_13')"
+              >Empowering Innovations in the Industry</span
+            >
+            <span class="text_17" id="menu-text-14" onclick="scrollToSection('text_14')"
+              >Inspiring Positive Change in Society</span
+            >
+            <span class="text_18" id="menu-text-15" onclick="scrollToSection('text_15')"
+              >Leading the Way to a Sustainable Future</span
             >
           </div>
+        </div>
+        <div class="block_48 flex-row justify-center" id="text_13">
           <span class="text_298">Empowering&nbsp;Innovations&nbsp;in&nbsp;the&nbsp;Industry</span>
         </div>
-        <div class="block_49 flex-row">
+        <div class="block_49 flex-row" id="text_14">
           <div class="group_95 flex-col">
             <div class="text-wrapper_7">
               <span class="text_20">Industry's&nbsp;First</span>
@@ -111,7 +120,7 @@
             >
           </div>
         </div>
-        <div class="block_50 flex-row justify-between">
+        <div class="block_50 flex-row justify-between" id="text_15">
           <span class="text_302">ECO&nbsp;NANO&nbsp;SOLAR</span>
           <div class="text-group_68 flex-col justify-between">
             <span class="text_303"
@@ -668,5 +677,7 @@
         </div>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

@@ -85,3 +85,18 @@ button:active {
   font-weight: normal; /* 字体粗细 */
   font-style: normal; /* 字体样式 */
 }
+
+.pure-menu-box {
+  position: absolute;
+  top: 10.96vw;
+  left: 0;
+}
+.menu-fixed {
+  position: fixed;
+  top: 100px;
+  left: 0;
+}
+.highlight {
+  color: red; /* 高亮颜色 */
+  font-weight: bold; /* 加粗 */
+}
