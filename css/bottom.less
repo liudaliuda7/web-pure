@@ -1,4 +1,6 @@
 .page {
+  width: auto;
+  height: auto;
   .box_17 {
     position: relative;
     > * {
@@ -50,9 +52,32 @@
     text-align: center;
     font-weight: bold;
   }
-}
+  .text-wrapper_92 {
+    left: 4.06vw;
+    .card_content {
+      padding-top: 1vw;
+      width: 46.58vw;
+      font-family: D, D;
+      font-weight: normal;
+      font-size: 0.83vw;
+      color: #ffffff;
+      line-height: 1.25vw;
+      text-align: left;
+      font-style: normal;
+      opacity: 0.9;
+      > span {
+        color: #000;
+        background-color: #cde681;
+      }
+    }
+  }
+  .image_64 {
+    width: 10.42vw;
+    height: 1.41vw;
+    margin: 11.43vw 0 0 5.05vw;
+  }
 
-.group_39 {
+  .group_39 {
     position: relative;
     overflow-y: auto;
     display: flex;
@@ -61,26 +86,71 @@
     min-height: 100%;
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-}
 
-.group_39::-webkit-scrollbar {
+    /* 添加背景图片样式 */
+    .block_63 {
+      background-image: url('image/9-2@4x.png');
+      background-size: 100%;
+    }
+
+    .block_64 {
+      background-image: url('image/9-3@4x.png');
+      background-size: 100%;
+    }
+
+    .block_65 {
+      background-image: url('image/9-4@4x.png');
+      background-size: 100%;
+    }
+
+    .block_66 {
+      background-image: url('image/9-5@4x.png');
+      background-size: 100%;
+    }
+
+    .block_67 {
+      background-image: url('image/9-6@4x.png');
+      background-size: 100%;
+    }
+
+    .block_68 {
+      background-image: url('image/9-7@4x.png');
+      background-size: 100%;
+    }
+
+    .block_69 {
+      background-image: url('image/9-8@4x.png');
+      background-size: 100%;
+    }
+
+    .block_70 {
+      background-image: url('image/9-9@4x.png');
+      background-size: 100%;
+    }
+
+    .block_71 {
+      background-image: url('image/9-10@4x.png');
+      background-size: 100%;
+    }
+  }
+  .group_39::-webkit-scrollbar {
     width: 6px;
-}
+  }
 
-.group_39::-webkit-scrollbar-track {
+  .group_39::-webkit-scrollbar-track {
     background: transparent;
-}
+  }
 
-.group_39::-webkit-scrollbar-thumb {
+  .group_39::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-}
+  }
 
-.group_109 {
+  .group_109 {
     margin: 0;
-}
+  }
 
-.signature-item {
+  .signature-item {
     transform: translateX(100%);
     opacity: 0;
     transition: all 0.5s ease;
@@ -89,8 +159,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
+  }
 
-.signature-item .text_362 {
+  .signature-item .text_362 {
     margin-left: 10px;
+  }
+
+  .card-container {
+    position: relative;
+    width: 54.69vw;
+    height: 33.33vw;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    margin-top: 3.13vw;
+  }
+
+  .group_104,
+  .box_91 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+    background-size: cover; /* 确保背景图片覆盖整个元素 */
+  }
+
+  .group_104{
+    margin-top: 0;
+  }
+  .box_91 {
+    margin-top: 0;
+    transform: rotateY(180deg);
+  }
+
+  .card-container.flipped .group_104 {
+    transform: rotateY(180deg);
+  }
+
+  .card-container.flipped .box_91 {
+    transform: rotateY(0deg);
+  }
+  .image-text_38 {
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
 }
