@@ -9,6 +9,8 @@
     <link rel="stylesheet/less" type="text/css" href="css/bottom.less" />
     <link rel="stylesheet/less" type="text/css" href="css/modal.less" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bottom.css" />
+    <link rel="stylesheet" type="text/css" href="css/modal.css" /> -->
   </head>
   <body>
     <div class="page flex-col">
@@ -201,7 +203,7 @@
             <span class="text_52"
               >Go beyond clean energy initiative—this is an ongoing journey toward a sustainable lifestyle. Join us in generating green energy and fueling the global expansion of PURE POWER ACTION. Once the goal is reached, VAPORESSO will officially launch the PURE POWER ACTION in the U.S.</span
             >
-            <span class="text_53" onclick="openModal()">Green&nbsp;Power&nbsp;Initiative&nbsp;Detailed&nbsp;Rule</span>
+            <span class="text_53" onclick="openModal('.rule')">Green&nbsp;Power&nbsp;Initiative&nbsp;Detailed&nbsp;Rule</span>
           </div>
           <div class="section_5 flex-col">
             <span class="text_54"
@@ -232,11 +234,50 @@
                 alt="Close"
                 onclick="closeModal()"
               />
-              <div class="rule flex-col">
+              <div class="content rule flex-col">
                 <span class="text_1">Voting&nbsp;and&nbsp;Drawing&nbsp;Rules</span>
                 <span class="paragraph_1"
                   >Number of votes: unlimited<br />Prizes:<br />- DJI MINI 4 pro x 1<br />- Osmo Action 5 pro x 2<br />- DJI NEO x 3<br />- VAPORESSO E-Store 20% discount code x 100 (*Single use when paying for an order, some specific products cannot be used)<br />Every time a user completes a vote, the green energy value corresponding to the number of votes will be converged into the total energy bar, click on the Lucky Draw button that appears, you can participate in the lucky draw online, the prizes are randomly output, the winning user needs to fill in the winning interface with valid prize receipt information, the VAPORESSO E-Store product discount code will be sent out immediately by email, and the rest of the prizes will be sent out after the end of the activity.</span
                 >
+              </div>
+              <div class="content rewards flex-col activity">
+                <img src="image/modal/cover.jpg" alt="">
+                <div>
+                  <div class="title">THIS IS YOUR MOMENT TO FUEL YOUR LUCK</div>
+                  <div class="describe">Thank you for your vote! Your support really means a lot to PURE POWER ACTION. Now, it's the time to give it a shot to claim rewards!</div>
+                  <img src="image/modal/drawBtn.png" class="drawBtn" alt="">
+                </div>
+              </div>
+              <div class="content discountCode flex-col activity">
+                <img src="image/modal/discountCode.jpg" alt="">
+                <div>
+                  <div class="title">Congratulations！</div>
+                  <div class="describe">You've unlocked an exclusive reward - a 20% off discount code! Your code will be sent to your email shortly. Please provide a valid email address below to unlock your exclusive discount and discover the fantastic world of vaping.</div>
+                  <div class="discountCodeInfo">
+                    <div class="discountCodeText">XXXXXXXXXXXX <img src="image/modal/copy.png" alt=""></div>
+                    <div class="discountCodeDescribe">Your discount code has been successfully sent.</div>
+                  </div>
+                  <div class="shopNow">Shop Now</div>
+                </div>
+              </div>
+              <div class="content notWinning flex-col activity">
+                <img src="image/modal/notWinning.jpg" alt="">
+                <div>
+                  <div class="title">ALMOST THERE!</div>
+                  <div class="describe">There are still prizes in the pool and GOOD LUCK with your next try!</div>
+                </div>
+              </div>
+              <div class="content drone1 flex-col activity">
+                <img src="image/modal/drone1.jpg" alt="">
+                <div>
+                  <div class="title">Congratulations！</div>
+                  <div class="describe">You've claimed your exclusive reward — a DJI MINI 4 pro! Please fill in the real and effective email information below, we will contact you via email after the end of the event. </div>
+                  <div class="input-group">
+                    <input type="email" placeholder="Enter your email" class="email-input">
+                    <button class="confirm-btn">Confirm</button>
+                  </div>
+                  <div class="tip">Your prize information has been successfully recorded.</div>
+                </div>
               </div>
             </div>
           </div>
@@ -254,7 +295,7 @@
                 <span class="text_319">319980</span>
                 <span class="text_320">1&nbsp;Support&nbsp;=&nbsp;100&nbsp;Green&nbsp;Energy</span>
               </div>
-              <div class="box_84 flex-row">
+              <div class="box_84 flex-row" onclick="openModal('.drone1')">
                 <div class="image-text_37 flex-row justify-between">
                   <span class="text-group_74">Cast&nbsp;Your&nbsp;Vote</span>
                   <img

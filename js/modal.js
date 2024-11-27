@@ -1,6 +1,9 @@
-function openModal() {
+let modalOpen = '';
+
+function openModal(value) {
   const modal = document.querySelector('.modal');
-  const modalContent = document.querySelector('.text-wrapper_1');
+  modalOpen = value
+  const modalContent = document.querySelector(modalOpen);
 
   // 显示遮罩和弹窗
   modal.style.display = 'flex';
@@ -23,7 +26,7 @@ function openModal() {
 
 function closeModal() {
   const modal = document.querySelector('.modal');
-  const modalContent = document.querySelector('.text-wrapper_1');
+  const modalContent = document.querySelector(modalOpen);
 
   // 移除show类触发关闭动画
   modal.classList.remove('show');

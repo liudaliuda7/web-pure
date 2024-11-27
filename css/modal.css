@@ -1,0 +1,92 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal .modal-logo {
+  position: absolute;
+  width: 7.55vw;
+  height: 1.04vw;
+  top: 1.56vw;
+  left: 1.88vw;
+}
+.modal .modal-close {
+  position: absolute;
+  width: 0.92vw;
+  height: 0.92vw;
+  cursor: pointer;
+  top: 0.99vw;
+  right: 0.99vw;
+}
+.modal .text-wrapper_1 {
+  width: 48.13vw;
+  height: 32.3vw;
+  position: relative;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.modal .text-wrapper_1.show {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal .rule .text_1 {
+  width: 13.44vw;
+  height: 1.05vw;
+  overflow-wrap: break-word;
+  font-size: 1.14vw;
+  white-space: nowrap;
+  line-height: 1.05vw;
+  margin: 5.67vw 0 0 3.75vw;
+  font-family: D-DINExp, D-DINExp;
+  font-weight: bold;
+  color: #000000;
+  text-align: left;
+  font-style: normal;
+}
+.modal .rule .paragraph_1 {
+  width: 40.63vw;
+  height: 12.5vw;
+  overflow-wrap: break-word;
+  font-size: 0.78vw;
+  line-height: 1.04vw;
+  margin: 1.25vw 0 11.82vw 3.75vw;
+  font-family: D, D;
+  font-weight: normal;
+  color: #000000;
+  text-align: left;
+  font-style: normal;
+}

@@ -1,0 +1,201 @@
+.page {
+  width: auto;
+  height: auto;
+}
+.page .box_17 {
+  position: relative;
+}
+.page .box_17 > * {
+  cursor: pointer;
+}
+.page .text-wrapper_95 {
+  position: relative;
+  top: -2.8vw;
+}
+.page input.text-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.page input.text-input::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+.page .text-wrapper_29 {
+  cursor: pointer;
+}
+.page .text_119 {
+  text-align: center;
+  height: auto;
+  margin: 0;
+  border: 1px dashed #000;
+  border-radius: 4vw;
+  padding: 2vw 0.8vw;
+  width: auto;
+}
+.page .text-wrapper_30 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4vw;
+  transform: rotate(30deg);
+}
+.page .text_105 {
+  text-align: center;
+  font-weight: bold;
+}
+.page .text-wrapper_92 {
+  left: 4.06vw;
+}
+.page .text-wrapper_92 .card_content {
+  padding-top: 1vw;
+  width: 46.58vw;
+  font-family: D, D;
+  font-weight: normal;
+  font-size: 0.83vw;
+  color: #ffffff;
+  line-height: 1.25vw;
+  text-align: left;
+  font-style: normal;
+  opacity: 0.9;
+}
+.page .text-wrapper_92 .card_content > span {
+  color: #000;
+  background-color: #cde681;
+}
+.page .image_64 {
+  width: 10.42vw;
+  height: 1.41vw;
+  margin: 11.43vw 0 0 5.05vw;
+}
+.page .group_39 {
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  /* 添加背景图片样式 */
+}
+.page .group_39 .block_63 {
+  background-image: url('image/9-2@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_64 {
+  background-image: url('image/9-3@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_65 {
+  background-image: url('image/9-4@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_66 {
+  background-image: url('image/9-5@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_67 {
+  background-image: url('image/9-6@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_68 {
+  background-image: url('image/9-7@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_69 {
+  background-image: url('image/9-8@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_70 {
+  background-image: url('image/9-9@4x.png');
+  background-size: 100%;
+}
+.page .group_39 .block_71 {
+  background-image: url('image/9-10@4x.png');
+  background-size: 100%;
+}
+.page .group_39::-webkit-scrollbar {
+  width: 6px;
+}
+.page .group_39::-webkit-scrollbar-track {
+  background: transparent;
+}
+.page .group_39::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.page .group_109 {
+  margin: 0;
+}
+.page .signature-item {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .signature-item .text_362 {
+  margin-left: 10px;
+}
+.page .card-container {
+  position: relative;
+  width: 54.69vw;
+  height: 33.33vw;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  margin-top: 3.13vw;
+}
+.page .group_104,
+.page .box_91 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  background-size: cover;
+  /* 确保背景图片覆盖整个元素 */
+}
+.page .group_104 {
+  margin-top: 0;
+}
+.page .box_91 {
+  margin-top: 0;
+  transform: rotateY(180deg);
+}
+.page .card-container.flipped .group_104 {
+  transform: rotateY(180deg);
+}
+.page .card-container.flipped .box_91 {
+  transform: rotateY(0deg);
+}
+.page .image-text_38 {
+  margin: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.page .text_52 {
+  height: auto;
+}
+.page .text_53 {
+  width: auto;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.page .text_54 {
+  width: auto;
+}

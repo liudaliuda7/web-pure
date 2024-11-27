@@ -29,7 +29,5 @@ window.addEventListener('scroll', () => {
   if(endRect.top < 100) {
     menu.classList.remove('menu-fixed') // 显示菜单
   }
-  console.log('end: ', endTop.top);
-
 })
 

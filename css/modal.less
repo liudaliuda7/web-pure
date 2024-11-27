@@ -37,13 +37,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); // 居中显示
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    &.show {
-      opacity: 1;
-      transform: translate(-50%, -50%);
-      transition: all 0.3s ease-in-out;
-    }
   }
   @keyframes modalFadeIn {
     from {
@@ -62,6 +55,133 @@
     }
     to {
       opacity: 1;
+    }
+  }
+  .content {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    &.show {
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
+    }
+    .title {
+      width: 18.23vw;
+      font-family: D-DINExp, D-DINExp;
+      font-weight: bold;
+      font-size: 1.88vw;
+      color: #000000;
+      line-height: 2.08vw;
+      text-align: left;
+      font-style: normal;
+    }
+    .describe {
+      width: 18.23vw;
+      font-family: D, D;
+      font-weight: normal;
+      font-size: 0.78vw;
+      color: #000000;
+      line-height: 1.09vw;
+      text-align: left;
+      font-style: normal;
+      margin: 0.63vw 0 2.29vw;
+    }
+  }
+  .activity {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4.43vw;
+  }
+  .rewards {
+    > img {
+      width: 20vw;
+      height: 23.44vw;
+    }
+    .drawBtn {
+      cursor: pointer;
+    }
+  }
+  .discountCode {
+    .discountCodeInfo {
+      width: 17.81vw;
+      height: 3.65vw;
+      background: #000000;
+      border: 0.05vw solid #000000;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        cursor: pointer;
+      }
+      .discountCodeText {
+        font-family: D-DINExp, D-DINExp;
+        font-weight: bold;
+        font-size: 1.15vw;
+        color: #FFFFFF;
+        line-height: 1.35vw;
+        font-style: normal;
+      }
+      .discountCodeDescribe {
+        font-family: D, D;
+        font-weight: normal;
+        font-size: 0.63vw;
+        color: #03FE00;
+        line-height: 0.83vw;
+        font-style: normal;
+      }
+    }
+    .shopNow {
+      margin-top: 0.63vw;
+      width: 17.81vw;
+      height: 2.6vw;
+      background: #FFFFFF;
+      font-size: 0.78vw;
+      border: 0.05vw solid #000000;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .drone1 {
+    .input-group {
+      display: flex;
+      align-items: center;
+    }
+    
+    .email-input {
+      flex: 1;
+      width: 13.33vw;
+      height: 2.6vw;
+      background: #FFFFFF;
+      border: 0.05vw solid #000000;
+      font-size: 0.78vw;
+      padding: 0 0.63vw;
+    }
+    
+    .confirm-btn {
+      width: 4.9vw;
+      height: 2.6vw;
+      background: #000000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.78vw;
+    }
+    
+    .confirm-btn:hover {
+      opacity: 0.9;
+    }
+    .tip {
+      font-family: D, D;
+      font-weight: normal;
+      font-size: 0.78vw;
+      color: #00B000;
+      line-height: 1.09vw;
+      font-style: normal;
+      margin-top: 0.63vw;
     }
   }
   .rule {
