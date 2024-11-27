@@ -373,7 +373,7 @@
 
 .block_3 {
   background-color: rgba(0, 0, 0, 1);
-  height: 317.04vw;
+  /* height: 317.04vw; */
   margin-top: -0.05vw;
   width: 100vw;
   position: relative;
@@ -759,7 +759,9 @@
 .text-wrapper_80 {
   width: 2.71vw;
   height: 1.2vw;
-  margin: 0.83vw 0 0 48.64vw;
+  /* margin: 0.83vw 0 0 48.64vw; */
+  position: absolute;
+  bottom: 60px;
 }
 
 .text_32 {
@@ -1029,9 +1031,9 @@
 }
 
 .text_43 {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  top: 0;
+  top: 0; */
   width: 30.63vw;
   height: 5.42vw;
   overflow-wrap: break-word;
@@ -1042,6 +1044,7 @@
   font-weight: normal;
   text-align: right;
   line-height: 2.71vw;
+  position: absolute;
 }
 
 .block_55 {
