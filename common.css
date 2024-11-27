@@ -167,3 +167,19 @@ button:active {
   width: 90vw;
   max-width: 1000px;
 }
+.pure-menu-box {
+  position: fixed;
+  top: 10.96vw;
+  left: 0;
+  z-index: 9;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
+  pointer-events: none;
+}
+.menu-fixed {
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu-fixed span {
+  cursor: pointer;
+}

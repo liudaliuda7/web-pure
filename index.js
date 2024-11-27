@@ -1,40 +1,35 @@
 function scrollToSection(sectionId) {
   const el = document.getElementById(sectionId)
-  const menu = document.getElementById('pure-menu')
-  const menuItems = document.querySelectorAll('#pure-menu span')
+  const activeTag = document.getElementById('pure-menu-tag')
+  // const menuItems = document.querySelectorAll('#pure-menu span')
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' })
-    menu.classList.add('menu-fixed') // 显示菜单
-
-    // 清除高亮
-    menuItems.forEach((item) => item.classList.remove('highlight'))
-
-    // 高亮对应的菜单项
     const activeItem = document.getElementById('menu-' + sectionId)
     if (activeItem) {
-      activeItem.classList.add('highlight')
+      console.log('activeItem: ', activeItem.offsetTop);
+      // 2.19 = (martinTop)1.46+0.73(height)
+      activeTag.style.transform = `translateY(${(activeItem.dataset.id - 1) * 2.19}vw)`
     }
   }
 }
 
 window.addEventListener('scroll', () => {
-  const sections = document.querySelectorAll('section')
+
+  const end = document.getElementById('product-box-end')
   const menu = document.getElementById('pure-menu')
-  const menuItems = document.querySelectorAll('#pure-menu span')
+  const part2 = document.getElementById('part_2')
 
-  let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop
+  const endRect = end.getBoundingClientRect()
+  const rect = part2.getBoundingClientRect()
 
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop
-    const sectionHeight = section.offsetHeight
+  if (rect.top <= 0) {
+    menu.classList.add('menu-fixed') // 显示菜单
+  }
 
-    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-      menu.classList.add('menu-fixed') // 显示菜单
-      menuItems.forEach((item) => item.classList.remove('highlight')) // 清除所有高亮
-      const activeItem = document.getElementById('menu-' + section.id)
-      if (activeItem) {
-        activeItem.classList.add('highlight') // 高亮当前菜单项
-      }
-    }
-  })
+  if(endRect.top < 100) {
+    menu.classList.remove('menu-fixed') // 显示菜单
+  }
+  console.log('end: ', endTop.top);
+
 })
+

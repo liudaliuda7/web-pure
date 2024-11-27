@@ -382,7 +382,8 @@
 .block_48 {
   width: 74.9vw;
   height: 12.5vw;
-  margin: 9.37vw 0 0 2.6vw;
+  margin: 0 auto;
+  margin-top: 9.37vw;
 }
 
 .block_4 {
@@ -441,16 +442,17 @@
 }
 
 .text_298 {
-  width: 54.95vw;
+  /* width: 54.95vw; */
+  width: 52.95vw;
   height: 12.5vw;
   overflow-wrap: break-word;
   color: rgba(255, 255, 255, 1);
   font-size: 6.25vw;
   font-family: D-DINCondensed-Bold;
   font-weight: normal;
-  text-align: right;
+  text-align: center;
   line-height: 6.78vw;
-  margin-left: 8.96vw;
+  /* margin-left: 8.96vw; */
 }
 
 .block_49 {
