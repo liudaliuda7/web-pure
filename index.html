@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./common.css" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <link rel="stylesheet/less" type="text/css" href="css/bottom.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/modal.less" />
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   </head>
   <body>
@@ -195,12 +196,12 @@
         <div class="block_60 flex-col justify-between">
           <div class="text-group_72 flex-col">
             <span class="text_51"
-              >Show&nbsp;Your&nbsp;Support&nbsp;For&nbsp;Pure&nbsp;Power&nbsp;Action</span
+              >Show Your Support For <br> Pure Power Action</span
             >
             <span class="text_52"
-              >Go&nbsp;beyond&nbsp;clean&nbsp;energy&nbsp;initiative—this&nbsp;is&nbsp;an&nbsp;ongoing&nbsp;journey&nbsp;toward&nbsp;a&nbsp;sustainable&nbsp;lifestyle.&nbsp;Join&nbsp;us&nbsp;in&nbsp;generating&nbsp;green&nbsp;energy&nbsp;and&nbsp;fueling&nbsp;the&nbsp;global&nbsp;expansion&nbsp;of&nbsp;PURE&nbsp;POWER&nbsp;ACTION.&nbsp;Once&nbsp;the&nbsp;goal&nbsp;is&nbsp;reached,&nbsp;VAPORESSO&nbsp;will&nbsp;officially&nbsp;launch&nbsp;the&nbsp;PURE&nbsp;POWER&nbsp;ACTION&nbsp;in&nbsp;the&nbsp;U.S.</span
+              >Go beyond clean energy initiative—this is an ongoing journey toward a sustainable lifestyle. Join us in generating green energy and fueling the global expansion of PURE POWER ACTION. Once the goal is reached, VAPORESSO will officially launch the PURE POWER ACTION in the U.S.</span
             >
-            <span class="text_53">Green&nbsp;Power&nbsp;Initiative&nbsp;Detailed&nbsp;Rule</span>
+            <span class="text_53" onclick="openModal()">Green&nbsp;Power&nbsp;Initiative&nbsp;Detailed&nbsp;Rule</span>
           </div>
           <div class="section_5 flex-col">
             <span class="text_54"
@@ -216,6 +217,27 @@
               <span class="text_57">100000</span>
               <span class="text_58">500000</span>
               <span class="text_59">1000000</span>
+            </div>
+          </div>
+          <div class="modal flex-col">
+            <div class="text-wrapper_1 flex-col">
+              <img
+                class="modal-logo"
+                src="image/modal/logo.svg"
+                alt="Logo"
+              />
+              <img
+                class="modal-close"
+                src="image/modal/close.svg"
+                alt="Close"
+                onclick="closeModal()"
+              />
+              <div class="rule flex-col">
+                <span class="text_1">Voting&nbsp;and&nbsp;Drawing&nbsp;Rules</span>
+                <span class="paragraph_1"
+                  >Number of votes: unlimited<br />Prizes:<br />- DJI MINI 4 pro x 1<br />- Osmo Action 5 pro x 2<br />- DJI NEO x 3<br />- VAPORESSO E-Store 20% discount code x 100 (*Single use when paying for an order, some specific products cannot be used)<br />Every time a user completes a vote, the green energy value corresponding to the number of votes will be converged into the total energy bar, click on the Lucky Draw button that appears, you can participate in the lucky draw online, the prizes are randomly output, the winning user needs to fill in the winning interface with valid prize receipt information, the VAPORESSO E-Store product discount code will be sent out immediately by email, and the rest of the prizes will be sent out after the end of the activity.</span
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -265,22 +287,6 @@
                 <span class="text_323">Green&nbsp;Energy&nbsp;Value</span>
                 <span class="text_324">319981</span>
                 <span class="text_325">1&nbsp;Support&nbsp;=&nbsp;100&nbsp;Green&nbsp;Energy</span>
-              </div>
-              <div class="block_61 flex-col">
-                <div class="text-wrapper_87">
-                  <span class="text_326">Click</span>
-                  <span class="text_327">to&nbsp;draw</span>
-                </div>
-                <img
-                  class="image_57"
-                  referrerpolicy="no-referrer"
-                  src="https://lanhu-oss.lanhuapp.com/SketchPng93b9ba89e75760e35dd9d6109d3be3961f4ae59b5a79243fb7ebfc88f01a2641"
-                />
-                <img
-                  class="image_58"
-                  referrerpolicy="no-referrer"
-                  src="https://lanhu-oss.lanhuapp.com/SketchPng1ac8267a28c29665fd2d4592b145340c8ec8f78ec74bcb8c84a2388dab677d0e"
-                />
               </div>
             </div>
             <div class="section_24 flex-col">
@@ -584,5 +590,6 @@
     <script src="index.js"></script>
     <script src="js/bottom.js"></script>
     <script src="js/animate.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>
