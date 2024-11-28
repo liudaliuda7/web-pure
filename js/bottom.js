@@ -1,3 +1,23 @@
+// 获取投票列表
+api.getVoteList().then(data => {
+  console.log(data)
+})
+
+// 提交投票
+api.updateVote(8).then(data => {
+  console.log(data)
+})
+
+// 抽奖并提交邮箱
+api.lottery().then(async data => {
+  if(data.prizeId > 0) {
+    await api.submitPrize({
+      prizeId: data.prizeId,
+      Email: 'example@email.com'
+    })
+  }
+})
+
 document.addEventListener('DOMContentLoaded', function () {
   // 获取头像容器和选中标记
   const avatarContainer = document.querySelector('.box_17');
