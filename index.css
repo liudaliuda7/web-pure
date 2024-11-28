@@ -9,7 +9,6 @@
 .group_93 {
   position: relative;
   width: 100vw;
-  height: 98.86vw;
 }
 
 .text-wrapper_73 {
@@ -279,8 +278,8 @@
 }
 
 .image_5 {
-  width: 5.21vw;
-  height: 0.06vw;
+  width: 6vw;
+  height: 0.1vw;
 }
 
 .text-wrapper_76 {
@@ -318,10 +317,8 @@
 .text-wrapper_5 {
   width: 100vw;
   height: 12.61vw;
-  background: url(https://lanhu-oss.lanhuapp.com/SketchPng5558c2b4e068f58e1b0f61dbf356b64d1e6563169c04b3a4e58d4d81da3f206a)
-    0vw -0.11vw no-repeat;
-  background-size: 100vw 12.76vw;
-  margin-top: 2.14vw;
+  margin-top: 3.2vw;
+  border-top: 0.1vw #000 solid;
 }
 
 .text_13 {
@@ -573,19 +570,20 @@
 }
 
 .box_3 {
-  height: 10.06vw;
-  background: url(https://lanhu-oss.lanhuapp.com/SketchPng0dc19f75358eea5cf6d53a5356f85ac1d0c32aaf7ee9be127695e8de4cee6327) -0.37vw -0.37vw
+  height: 12.06vw;
+  background: url('image/rotatwBg.png') -0.37vw -0.37vw
     no-repeat;
   background-size: 28.95vw 10.78vw;
-  width: 28.23vw;
+  width: 29.23vw;
   margin: -0.05vw 0 0 10.26vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
 }
 
 .section_1 {
   height: 9.64vw;
-  background: url(https://lanhu-oss.lanhuapp.com/SketchPng2e4e48d31e23244683e7758b6c16fbf9e2e11438742d4a2f4bde0fce68db601e)
-    100% no-repeat;
-  background-size: 100% 100%;
   width: 27.82vw;
   position: relative;
   margin: 0.2vw 0 0 0.2vw;
@@ -689,7 +687,7 @@
   font-weight: normal;
   text-align: left;
   line-height: 1.57vw;
-  margin: 8.9vw 0 1.56vw 10.93vw;
+  margin: 6.9vw 0 1.56vw 10.93vw;
 }
 
 .block_50 {

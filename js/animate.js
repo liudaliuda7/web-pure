@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     })
     o.from(".video-box", {
-        scale: .2,
+        scale: .1,
         ease: "power1.in"
     }),
     o.to("video-box", {
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     imgGsap.to(".img-slide-item-01", {
         ease: "power1.in",
         scale: 1.1,
-        rotate: 40,
-        translateY: -1000,
+        rotate: 90,
+        translateY: -2000,
         duration: 6,
         onComplete: () => {
           pageNumEl.innerHTML = '02'
@@ -75,8 +75,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     imgGsap.to(".img-slide-item-02", {
       ease: "power1.in",
       scale: 1.1,
-      rotate: 40,
-      translateY: -1000,
+      rotate: 90,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '03'
@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     imgGsap.to(".img-slide-item-03", {
       ease: "power1.in",
       scale: 1.1,
-      rotate: 40,
-      translateY: -1000,
+      rotate: 90,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '04'
@@ -111,8 +111,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     imgGsap.to(".img-slide-item-04", {
       ease: "power1.in",
       scale: 1.1,
-      rotate: 40,
-      translateY: -1000,
+      rotate: 90,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '05'
