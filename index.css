@@ -395,7 +395,7 @@
 .text-wrapper_77 {
   width: 9.95vw;
   height: 5.11vw;
-  margin: 0.78vw 0 0 0.83vw;
+  margin-left: 2.6vw;
 }
 
 .text_16 {
@@ -463,6 +463,8 @@
   background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/9f18c12f38db4f308c657ae979acb916_mergeImage.png);
   width: 88.55vw;
   height: 46.88vw;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .text-wrapper_7 {

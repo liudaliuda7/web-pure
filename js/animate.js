@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power1.in",
         scale: 1.1,
         rotate: 90,
-        translateY: -2000,
+        translateY: -6000,
         duration: 6,
         onComplete: () => {
           pageNumEl.innerHTML = '02'
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -2000,
+      translateY: -6000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '03'
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -2000,
+      translateY: -6000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '04'
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -2000,
+      translateY: -6000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '05'
