@@ -4,9 +4,17 @@
 }
 .page .box_17 {
   position: relative;
+  width: 21.1vw;
 }
 .page .box_17 > * {
   cursor: pointer;
+}
+.page .box_17 > div:not(:first-child):not(:last-child) {
+  margin-left: -0.2vw;
+}
+.page .text-wrapper_29,
+.page .box_18 {
+  width: 21.1vw;
 }
 .page .text-wrapper_95 {
   position: relative;
@@ -21,8 +29,8 @@
   font-family: inherit;
   font-size: inherit;
   color: inherit;
-  text-align: center;
-  padding: 0;
+  text-align: left;
+  padding: 0 1vw;
   margin: 0;
 }
 .page input.text-input::placeholder {
@@ -36,17 +44,22 @@
   text-align: center;
   height: auto;
   margin: 0;
-  border: 1px dashed #000;
   border-radius: 4vw;
   padding: 2vw 0.8vw;
   width: auto;
+  transform: rotate(21.5deg);
 }
 .page .text-wrapper_30 {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 4vw;
-  transform: rotate(30deg);
+  background: url('../image/9-12@2x.png');
+  background-size: 100% 100%;
+  height: 10.94vw;
+  width: 13.13vw;
+  left: 32.49vw;
+  top: 24.73vw;
 }
 .page .text_105 {
   text-align: center;
@@ -197,5 +210,168 @@
   cursor: pointer;
 }
 .page .text_54 {
+  width: auto;
+}
+.page .block_15 {
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+.page .block_15 .group_17 {
+  overflow-y: scroll;
+  height: 100%;
+}
+.page .block_15 .block_60 {
+  margin-top: 9.1vw;
+}
+.page .block_15 .block_60 .group_16 {
+  background-color: #A7F387;
+}
+.page .block_15 .block_60 .group_16 .text-wrapper_18 {
+  background-color: #36DD51;
+}
+.page .block_15 .block_60 .text-wrapper_86 {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0.4;
+}
+.page .block_15 .text_318,
+.page .block_15 .text_319,
+.page .block_15 .text_320 {
+  text-align: center;
+  font-family: D-DINExp, D-DINExp;
+  font-weight: bold;
+}
+.page .block_15 .text_337 {
+  font-size: 1.1vw;
+}
+.page .block_15 .text_347 {
+  font-size: 1.2vw;
+  width: auto;
+  height: auto;
+}
+.page .block_15 .text_336,
+.page .block_15 .text_337,
+.page .block_15 .text_338,
+.page .block_15 .text_346,
+.page .block_15 .text_347,
+.page .block_15 .text_348 {
+  font-family: D-DINExp, D-DINExp;
+  font-weight: bold;
+}
+.page .block_15 .text_320,
+.page .block_15 .text_338,
+.page .block_15 .text_348 {
+  font-weight: normal;
+}
+.page .block_15 .text_321 {
+  width: 20.83vw;
+  height: 1.35vw;
+  font-family: D-DINExp, D-DINExp;
+  font-weight: bold;
+  font-size: 0.78vw;
+  color: #000000;
+  line-height: 1.35vw;
+  font-style: normal;
+}
+.page .block_15 .text_322 {
+  width: 20.83vw;
+  height: 1.46vw;
+  font-family: D-DINExp, D-DINExp;
+  font-weight: bold;
+  font-size: 0.95vw;
+  color: #000000;
+  line-height: 1.46vw;
+  font-style: normal;
+}
+.page .block_15 .paragraph_32 {
+  width: 20.83vw;
+  height: 3.13vw;
+  font-family: D, D;
+  font-weight: normal;
+  font-size: 0.78vw;
+  color: #000000;
+  line-height: 1.04vw;
+  font-style: normal;
+}
+.page .block_15 .box_84,
+.page .block_15 .text-wrapper_91,
+.page .block_15 .text-wrapper_89 {
+  cursor: pointer;
+}
+.page .block_15 .box_84 .draw {
+  display: none;
+  background-color: #FF4040;
+}
+.page .fontRepair {
+  text-align: center;
+  font-family: D-DINExp, D-DINExp;
+}
+.page .fontBold {
+  font-weight: bold;
+}
+.page .paragraph_31 {
+  font-family: D-DINCondensed, D-DINCondensed;
+  font-weight: bold;
+  text-align: center;
+}
+.page .section_22 {
+  width: 100vw;
+  height: 52.94vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-left: 0;
+}
+.page .pin-spacer {
+  margin-top: 4vw !important;
+}
+.page .pin-spacer .text_43 {
+  text-align: center;
+}
+.page .pin-spacer .video-box {
+  margin-top: -1.5vw;
+}
+.page .pin-spacer .video-wrapper video {
+  max-width: 88.5vw;
+}
+.page .pin-spacer .img-slide-wrapper {
+  width: 66.67vw;
+}
+.page .pin-spacer .img-slide-wrapper img {
+  width: 66.67vw;
+}
+.page .block_49 .text_22 {
+  width: 32.29vw;
+  height: 4.43vw;
+  font-family: D-DINCondensed, D-DINCondensed;
+  font-size: 5.21vw;
+  color: transparent;
+  line-height: 4.43vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.05vw #000000;
+}
+.page .block_49 .rotate {
+  transform: rotate(7deg);
+  position: relative;
+  top: 1.5vw;
+}
+.page .block_49 .text_299 {
+  width: auto;
+}
+.page .block_49 .text_28 {
+  width: auto;
+}
+.page .box_26 .text-wrapper_31 {
+  width: 52vw;
+}
+.page .box_26 .paragraph_14,
+.page .box_26 .paragraph_15 {
+  line-height: 0.78vw;
+}
+.page .text-group_81 {
+  width: auto;
+}
+.page .text-group_81 .paragraph_5 {
   width: auto;
 }

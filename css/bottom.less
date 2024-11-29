@@ -4,10 +4,18 @@
 
   .box_17 {
     position: relative;
+    width: 21.1vw;
 
     >* {
       cursor: pointer;
     }
+    > div:not(:first-child):not(:last-child) {
+      margin-left: -0.2vw;
+    }
+  }
+  
+  .text-wrapper_29, .box_18 {
+    width: 21.1vw;
   }
 
   .text-wrapper_95 {
@@ -269,6 +277,14 @@
       font-family: D-DINExp, D-DINExp;;
       font-weight: bold;
     }
+    .text_337 {
+      font-size: 1.1vw;
+    }
+    .text_347 {
+      font-size: 1.2vw;
+      width: auto;
+      height: auto;
+    }
     .text_336, .text_337, .text_338,
     .text_346, .text_347, .text_348 {
       font-family: D-DINExp, D-DINExp;;
@@ -292,7 +308,7 @@
       height: 1.46vw;
       font-family: D-DINExp, D-DINExp;
       font-weight: bold;
-      font-size: 1.35vw;
+      font-size: 0.95vw;
       color: #000000;
       line-height: 1.46vw;
       font-style: normal;
@@ -310,7 +326,12 @@
     .box_84, .text-wrapper_91, .text-wrapper_89 {
       cursor: pointer;
     }
-    
+    .box_84 {
+      .draw {
+        display: none;
+        background-color: #FF4040;
+      }
+    }
   }
   .fontRepair {
     text-align: center;
@@ -380,6 +401,12 @@
     }
     .paragraph_14, .paragraph_15 {
       line-height: 0.78vw;
+    }
+  }
+  .text-group_81{
+    width: auto;
+    .paragraph_5 {
+      width: auto;
     }
   }
 }

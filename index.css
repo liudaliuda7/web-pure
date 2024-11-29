@@ -1186,7 +1186,7 @@
 
 .group_97 {
   width: 100vw;
-  height: 107.77vw;
+  height: 112.77vw;
 }
 
 .paragraph_31 {
@@ -1241,8 +1241,7 @@
 }
 
 .text_317 {
-  width: 30.63vw;
-  height: 5.84vw;
+  width: 42.63vw;
   overflow-wrap: break-word;
   color: rgba(0, 0, 0, 1);
   font-size: 1.04vw;
@@ -1900,17 +1899,16 @@
 }
 
 .text_335 {
-  width: 5.42vw;
   height: 1.2vw;
   overflow-wrap: break-word;
   color: rgba(255, 207, 138, 1);
   font-size: 0.78vw;
   font-family: D-DINExp-Bold;
   font-weight: normal;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
   line-height: 1.2vw;
-  margin: 0.72vw 0 0 1.97vw;
+  margin: 0.72vw 0 0 0;
 }
 
 .section_26 {
@@ -2100,17 +2098,16 @@
 }
 
 .text_345 {
-  width: 5.53vw;
   height: 1.2vw;
   overflow-wrap: break-word;
   color: rgba(160, 228, 255, 1);
   font-size: 0.78vw;
   font-family: D-DINExp-Bold;
   font-weight: normal;
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
   line-height: 1.2vw;
-  margin: 0.72vw 0 0 1.92vw;
+  margin: 0.72vw 0 0 0;
 }
 
 .group_101 {
@@ -2225,7 +2222,7 @@
   width: 8.86vw;
   height: 2.09vw;
   border: 1px solid rgba(0, 0, 0, 1);
-  margin-top: 1.57vw;
+  margin-top: 2.57vw;
 }
 
 .image-text_38 {
