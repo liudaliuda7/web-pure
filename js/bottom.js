@@ -1,22 +1,96 @@
 // 获取投票列表
-api.getVoteList().then(data => {
-  console.log(data)
-})
+// api.getVoteList().then(data => {
+//   console.log(data)
+// })
 
-// 提交投票
-api.updateVote(8).then(data => {
-  console.log(data)
-})
+// // 提交投票
+// api.updateVote(8).then(data => {
+//   console.log(data)
+// })
 
-// 抽奖并提交邮箱
-api.lottery().then(async data => {
-  if(data.prizeId > 0) {
-    await api.submitPrize({
-      prizeId: data.prizeId,
-      Email: 'example@email.com'
-    })
+// // 抽奖并提交邮箱
+// api.lottery().then(async data => {
+//   if(data.prizeId > 0) {
+//     await api.submitPrize({
+//       prizeId: data.prizeId,
+//       Email: 'example@email.com'
+//     })
+//   }
+// })
+// 渲染签名强
+async function renderSignature() {
+  const imgList = [
+    { avatar_id: 1, url: '../image/9-1@4x.png' },
+    { avatar_id: 2, url: '../image/9-2@4x.png' },
+    { avatar_id: 3, url: '../image/9-3@4x.png' },
+    { avatar_id: 4, url: '../image/9-4@4x.png' },
+    { avatar_id: 5, url: '../image/9-5@4x.png' },
+    { avatar_id: 6, url: '../image/9-6@4x.png' },
+    { avatar_id: 7, url: '../image/9-7@4x.png' },
+    { avatar_id: 8, url: '../image/9-8@4x.png' },
+    { avatar_id: 9, url: '../image/9-9@4x.png' },
+    { avatar_id: 10, url: '../image/9-10@4x.png' }
+  ]
+  // 示例数据
+  let signatureData = [];
+  // 评论列表
+  await api.getCommentList().then(res => {
+    console.log(res);
+    // 计算 signatureData
+    signatureData = res.map(item => {
+      const img = imgList.find(img => img.avatar_id === item.avatar_id);
+      return {
+        avatar: img ? img.url : '',
+        name: item.name
+      };
+    });
+  });
+
+
+  const container = document.getElementById('signature-container');
+  const maxRows = 6;
+  const itemsPerRow = 5;
+
+  // 计算需要的行数
+  const totalRows = Math.min(maxRows, Math.ceil(signatureData.length / itemsPerRow));
+
+  // 生成行
+  for (let i = 0; i < totalRows; i++) {
+    const row = document.createElement('div');
+    row.className = 'group_110 flex-row justify-center'; // 使用 justify-center 居中显示
+
+    // 生成每行的元素
+    for (let j = 0; j < itemsPerRow; j++) {
+      const index = i * itemsPerRow + j;
+      if (index < signatureData.length) {
+        const item = signatureData[index];
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'image-text_41 flex-row justify-between';
+
+        const avatarDiv = document.createElement('div');
+        avatarDiv.className = 'box_97 flex-col';
+        const avatarImg = document.createElement('img');
+        avatarImg.src = item.avatar;
+        avatarDiv.appendChild(avatarImg);
+
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'text-group_84';
+        nameSpan.textContent = item.name;
+
+        itemDiv.appendChild(avatarDiv);
+        itemDiv.appendChild(nameSpan);
+        row.appendChild(itemDiv);
+      }
+    }
+
+    container.appendChild(row);
   }
-})
+  
+  // 启动滚动动画
+  signWall.style.animation = 'scroll-right 10s linear infinite';
+}
+
+renderSignature()
 
 document.addEventListener('DOMContentLoaded', function () {
   // 获取头像容器和选中标记
@@ -55,9 +129,19 @@ document.addEventListener('DOMContentLoaded', function () {
       return;
     }
 
+    // 获取头像ID（假设头像顺序为1-10）
+    const avatarId = avatars.indexOf(selectedAvatar) + 1;
+
+    // 调用提交签名接口
+    api.addComment(name, avatarId).then(response => {
+      console.log('签名提交成功:', response);
+    }).catch(error => {
+      console.error('签名提交失败:', error);
+    });
+
     // 创建新的签名元素
     const newSignature = document.createElement('div');
-    newSignature.className = 'group_109 flex-row signature-item';
+    newSignature.className = 'image-text_41 flex-row justify-between';
 
     // 复制选中的头像
     const avatarClone = selectedAvatar.cloneNode(true);
@@ -69,15 +153,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 创建名字元素
     const nameSpan = document.createElement('span');
-    nameSpan.className = 'text_362';
+    nameSpan.className = 'text-group_84';
     nameSpan.textContent = name;
 
     // 组装新的签名元素
     newSignature.appendChild(avatarClone);
     newSignature.appendChild(nameSpan);
 
-    // 将新签名添加到签名墙的开头
-    signWall.insertBefore(newSignature, signWall.firstChild);
+    // 将新签名添加到签名墙的中间行
+    const rows = signWall.querySelectorAll('.group_110');
+    const middleIndex = Math.floor(rows.length / 2);
+    if (rows.length > 0) {
+      rows[middleIndex].appendChild(newSignature); // 插入到中间行
+    } else {
+      console.error('没有可用的行，无法插入新签名');
+    }
 
     // 清空输入框
     nameInput.value = '';

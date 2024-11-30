@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="181px" height="181px" viewBox="0 0 181 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>06-2-1@2x</title>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="75.0471799%" id="radialGradient-1">
+            <stop stop-color="#F8D096" stop-opacity="0.58" offset="0%"></stop>
+            <stop stop-color="#F8D096" stop-opacity="0" offset="78.3065666%"></stop>
+            <stop stop-color="#F8D096" stop-opacity="0.310000546" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="60.5" cy="60.5" r="60.5"></circle>
+        <path d="M51.6842817,69.3630146 L44.3292789,102.543475 C44.3117043,102.789582 44.2414055,103.026899 44.2414055,103.281796 C44.3029169,104.846331 45.5682938,106.059286 47.0709287,105.997759 C47.8354272,105.962601 48.5472017,105.584651 49.0305053,104.969385 L92.211489,51.6696987 C92.7738787,50.9841156 93.0023495,50.2985326 92.9759875,49.60416 C92.9144761,48.101151 91.7281853,46.9145651 90.2870617,46.9057756 C90.1288896,46.8881965 90.1113149,46.896986 90.0849529,46.896986 L72.8002572,46.712406 L84.6104408,20.0010363 C84.7861876,19.5967181 84.8828483,19.1660314 84.874061,18.7177655 C84.8476989,17.9706558 84.5313547,17.2587042 84.0041144,16.7489116 C83.476874,16.2391191 82.7563122,15.9754334 82.0357504,16.001802 C82.0181757,16.001802 71.4821563,16.001802 50.4364795,16.0105915 C49.2765508,16.0369601 48.3450928,16.7137536 47.9408753,17.7157595 C47.9233006,17.7597072 41.3591584,33.6687493 28.230874,65.4516755 C28.0639146,65.8296251 27.9848285,66.2515224 28.0024032,66.6646301 C28.0639146,68.2291658 29.3292914,69.4421203 30.8319263,69.3805937 C30.849501,69.3805937 37.8002861,69.3718041 51.6842817,69.3630146 Z" id="path-3"></path>
+        <filter x="-5.4%" y="-3.9%" width="121.5%" height="107.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="7" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.992156863   0 0 0 0 0.937254902   0 0 0 0 0.862745098  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="能量/2" transform="translate(-55, -46)">
+            <g id="编组-24备份" transform="translate(25, 25)">
+                <g id="06-2-1" transform="translate(60, 51)">
+                    <g id="椭圆形">
+                        <circle stroke="url(#radialGradient-1)" stroke-width="30" fill="#FFFFFF" fill-rule="evenodd" cx="60.5" cy="60.5" r="75.5"></circle>
+                        <circle stroke="#F8D096" stroke-width="15" cx="60.5" cy="60.5" r="68"></circle>
+                    </g>
+                    <g id="路径">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <use fill="#EBB970" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

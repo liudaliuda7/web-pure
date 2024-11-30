@@ -1080,7 +1080,7 @@
 .text-wrapper_83 {
   width: 37.92vw;
   height: 2.61vw;
-  margin: 2.5vw 0 7.81vw 31.04vw;
+  margin: 7.5vw 0 7.81vw 31.04vw;
 }
 
 .text_45 {
@@ -1186,10 +1186,6 @@
   margin: 0.52vw 0 1.97vw 4.16vw;
 }
 
-.group_97 {
-  height: 112.77vw;
-}
-
 .paragraph_31 {
   width: 54.95vw;
   height: 12.5vw;
@@ -1223,7 +1219,7 @@
   color: rgba(0, 0, 0, 1);
   font-size: 1.35vw;
   font-family: D-DINCondensed-Bold;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
   white-space: nowrap;
   line-height: 1.57vw;
@@ -1250,7 +1246,7 @@
   font-weight: normal;
   text-align: left;
   line-height: 1.46vw;
-  margin: 2.08vw 0 11.51vw 41.25vw;
+  margin: -0.6vw 0 11.51vw 41.25vw;
 }
 
 .block_15 {
@@ -1445,15 +1441,15 @@
 }
 
 .image_55 {
-  width: 6.31vw;
-  height: 6.31vw;
-  margin: 2.65vw 0 0 3.12vw;
+  width: 9.43vw;
+  height: 9.43vw;
+  margin: 1.09vw 0 0 1.56vw;
 }
 
 .text-group_73 {
   width: 10.42vw;
   height: 4.85vw;
-  margin: 2.86vw 0 0 1.04vw;
+  margin: 1.3vw 0 0 1.04vw;
 }
 
 .text_318 {
@@ -1519,7 +1515,6 @@
   color: rgba(182, 255, 152, 1);
   font-size: 0.78vw;
   font-family: D-DINExp-Bold;
-  font-weight: normal;
   text-align: right;
   white-space: nowrap;
   line-height: 1.2vw;
@@ -1804,9 +1799,9 @@
 }
 
 .image_59 {
-  width: 6.31vw;
-  height: 6.31vw;
-  margin: 2.65vw 0 0 3.12vw;
+  width: 9.43vw;
+  height: 9.43vw;
+  margin: 1.09vw 0 0 1.56vw;
 }
 
 .text_330 {
@@ -1820,7 +1815,7 @@
   text-align: right;
   white-space: nowrap;
   line-height: 0.84vw;
-  margin: 2.03vw 0 0 1.04vw;
+  margin: 0.47vw 0 0 1.04vw;
 }
 
 .text-wrapper_88 {
@@ -1990,9 +1985,9 @@
 }
 
 .image_60 {
-  width: 6.31vw;
-  height: 6.31vw;
-  margin: 2.65vw 0 0 3.12vw;
+  width: 9.43vw;
+  height: 9.43vw;
+  margin: 1.09vw 0 0 1.56vw;
 }
 
 .text_339 {
@@ -2006,7 +2001,7 @@
   text-align: right;
   white-space: nowrap;
   line-height: 0.84vw;
-  margin: 2.03vw 0 0 1.04vw;
+  margin: 0.47vw 0 0 1.04vw;
 }
 
 .text-wrapper_90 {
@@ -2223,7 +2218,7 @@
   width: 8.86vw;
   height: 2.09vw;
   border: 1px solid rgba(0, 0, 0, 1);
-  margin-top: 2.57vw;
+  margin-top: 1.56vw;
 }
 
 .image-text_38 {
@@ -2264,25 +2259,22 @@
 
 .text-group_81 {
   width: 51.05vw;
-  height: 19.38vw;
   margin: 10.41vw 0 0 24.47vw;
 }
 
 .paragraph_5 {
   width: 34.8vw;
-  height: 12.5vw;
   overflow-wrap: break-word;
   color: rgba(0, 0, 0, 1);
   font-size: 6.25vw;
   font-family: D-DINCondensed-Bold;
   font-weight: normal;
   text-align: left;
-  line-height: 6.78vw;
+  line-height: 6vw;
 }
 
 .text_93 {
   width: 51.05vw;
-  height: 5.84vw;
   overflow-wrap: break-word;
   color: rgba(0, 0, 0, 1);
   font-size: 1.04vw;
@@ -2973,7 +2965,6 @@
 }
 
 .group_110 {
-  width: 65.27vw;
   height: 2.71vw;
   margin: 1.56vw 0 0 -3.28vw;
 }
@@ -2993,9 +2984,9 @@
 }
 
 .image-text_41 {
-  width: 12.61vw;
   height: 2.71vw;
-  margin-left: 6.78vw;
+  margin-left: 5.21vw;
+  gap: 0.5vw;
 }
 
 .box_97 {
@@ -3007,7 +2998,6 @@
 }
 
 .text-group_84 {
-  width: 9.17vw;
   height: 1.78vw;
   overflow-wrap: break-word;
   color: rgba(0, 0, 0, 1);

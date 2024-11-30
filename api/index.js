@@ -94,7 +94,7 @@ window.api = {
    */
   getCommentList() {
     return request({
-      url: '/comment/list',
+      url: '/vote/comment/list',
       method: 'post',
       data: {
         activityType: 'care_2024'
@@ -108,12 +108,12 @@ window.api = {
    */
   addComment(name, avatar_id) {
     return request({
-      url: '/comment/add',
+      url: '/vote/comment/add',
       method: 'post',
       data: {
         name,
         avatar_id,
-        activeType: 'care_2024'
+        activityType: 'care_2024'
       }
     })
   }

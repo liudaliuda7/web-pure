@@ -326,11 +326,28 @@
     .box_84, .text-wrapper_91, .text-wrapper_89 {
       cursor: pointer;
     }
-    .box_84 {
+    .drawReward {
+      background: url('../image/06-1-3@2x.svg') center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: #FF4040;
+      width: 9.38vw;
+      height: 2.61vw;
+      border-radius: 25px;
+      margin: 1.82vw 0 1.3vw 1.56vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       .draw {
-        display: none;
-        background-color: #FF4040;
+        font-family: D-DINExp-Bold;
+        font-weight: bold;
+        font-size: 0.78vw;
+        color: #FFF500;
+        font-style: normal;
       }
+    }
+    .state {
+      display: none;
     }
   }
   .fontRepair {
@@ -341,16 +358,17 @@
     font-weight: bold;
   }
   .paragraph_31 {
-    font-family: D-DINCondensed, D-DINCondensed;
+    font-family: D-DINCondensed-Bold;
     font-weight: bold;
     text-align: center;
   }
   .section_22 {
-    width: 100vw;
-    height: 52.94vw;
+    width: 1700px;
+    height: 900px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   .pin-spacer {
     margin-top: 4vw !important;
@@ -516,4 +534,24 @@
       width: auto;
     }
   }
+  // .group_39 {
+  //   overflow: hidden;
+  //   white-space: nowrap;
+  //   position: relative;
+  // }
+  
+  // .signature-item {
+  //   display: inline-block;
+  //   margin-right: 20px; /* 每个签名之间的间距 */
+  //   animation: scroll-right 10s linear infinite;
+  // }
+  
+  // @keyframes scroll-right {
+  //   from {
+  //     transform: translateX(-100%);
+  //   }
+  //   to {
+  //     transform: translateX(100%);
+  //   }
+  // }
 }

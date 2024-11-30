@@ -298,9 +298,28 @@
 .page .block_15 .text-wrapper_89 {
   cursor: pointer;
 }
-.page .block_15 .box_84 .draw {
-  display: none;
+.page .block_15 .drawReward {
+  background: url('../image/06-1-3@2x.svg') center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #FF4040;
+  width: 9.38vw;
+  height: 2.61vw;
+  border-radius: 25px;
+  margin: 1.82vw 0 1.3vw 1.56vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page .block_15 .drawReward .draw {
+  font-family: D-DINExp-Bold;
+  font-weight: bold;
+  font-size: 0.78vw;
+  color: #FFF500;
+  font-style: normal;
+}
+.page .block_15 .state {
+  display: none;
 }
 .page .fontRepair {
   text-align: center;
@@ -310,16 +329,17 @@
   font-weight: bold;
 }
 .page .paragraph_31 {
-  font-family: D-DINCondensed, D-DINCondensed;
+  font-family: D-DINCondensed-Bold;
   font-weight: bold;
   text-align: center;
 }
 .page .section_22 {
-  width: 100vw;
-  height: 52.94vw;
+  width: 1700px;
+  height: 900px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .page .pin-spacer {
   margin-top: 4vw !important;

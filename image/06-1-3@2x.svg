@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="50px" viewBox="0 0 180 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>06-1-2@2x</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="180" height="50" rx="25"></rect>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="能量/1-抽奖" transform="translate(-55, -380)">
+            <g id="06-1-2" transform="translate(55, 380)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="矩形" fill-opacity="0" fill="#FF4040" xlink:href="#path-1"></use>
+                <g id="2-1彩带" mask="url(#mask-2)" stroke="#FFFFFF">
+                    <g transform="translate(148, -2.9847)">
+                        <path d="M15.8115576,41.5987963 C14.701424,43.0796661 14.7065601,44.2854338 15.8269661,45.2160992 C17.6525613,46.1924695 17.5168778,47.101383 15.4199154,47.9428396" id="路径-4备份-3" stroke-width="1.05662713" transform="translate(16.0421, 44.7708) scale(-1, 1) rotate(215) translate(-16.0421, -44.7708)"></path>
+                        <path d="M22.7405599,19.3442064 C21.8335427,20.5518797 21.8296324,21.5290955 22.7288289,22.2758536 C24.1975949,23.0549171 24.0818704,23.7924846 22.3816555,24.4885563" id="路径-4备份-5" stroke-width="0.7366272" transform="translate(22.9037, 21.9164) scale(-1, 1) rotate(155) translate(-22.9037, -21.9164)"></path>
+                        <line x1="29.6652317" y1="12.9210611" x2="24.857909" y2="8.01379161" id="路径-5备份-6" stroke-width="2.77364622" transform="translate(27.2616, 10.4674) scale(-1, 1) rotate(18) translate(-27.2616, -10.4674)"></line>
+                        <line x1="4.55305195" y1="0.357923998" x2="1.06115149" y2="7.77890343" id="路径-5" stroke-width="2.37741105" transform="translate(2.8071, 4.0684) scale(-1, 1) rotate(18) translate(-2.8071, -4.0684)"></line>
+                        <path d="M12.5650601,14.0109377 C11.4530257,15.8733862 11.4537237,17.3854001 12.5671541,18.5469792 C14.3833639,19.7624235 14.2447786,20.9028694 12.1513982,21.9683171" id="路径-4备份-4" stroke-width="1.5849407" transform="translate(12.7821, 17.9896) scale(-1, 1) rotate(1) translate(-12.7821, -17.9896)"></path>
+                        <line x1="29.0023273" y1="28.6595016" x2="30.9491295" y2="32.6564539" id="路径-5备份-5" stroke-width="0.924548741" transform="translate(29.9757, 30.658) scale(-1, 1) rotate(18) translate(-29.9757, -30.658)"></line>
+                        <line x1="15.5102152" y1="35.9300236" x2="18.3881117" y2="32.9629219" id="路径-5备份-10" stroke-width="1.5849407" transform="translate(16.9492, 34.4465) scale(-1, 1) rotate(18) translate(-16.9492, -34.4465)"></line>
+                    </g>
+                </g>
+                <g id="2-1彩带" mask="url(#mask-2)" stroke="#FFFFFF">
+                    <g transform="translate(13.3564, 32.0697) scale(-1, 1) translate(-13.3564, -32.0697)translate(-5, 1.4064)">
+                        <path d="M21.5112224,39.2076875 C20.4010888,40.6885573 20.4062249,41.8943249 21.5266309,42.8249903 C23.3522261,43.8013607 23.2165426,44.7102742 21.1195802,45.5517307" id="路径-4备份-3" stroke-width="1.05662713" transform="translate(21.7418, 42.3797) scale(-1, 1) rotate(215) translate(-21.7418, -42.3797)"></path>
+                        <path d="M10.4402247,28.9530976 C9.53320749,30.1607709 9.52929714,31.1379866 10.4284937,31.8847448 C11.8972597,32.6638082 11.7815352,33.4013758 10.0813202,34.0974475" id="路径-4备份-5" stroke-width="0.7366272" transform="translate(10.6033, 31.5253) scale(-1, 1) rotate(155) translate(-10.6033, -31.5253)"></path>
+                        <line x1="23.3648965" y1="5.52995227" x2="18.5575737" y2="0.622682782" id="路径-5备份-6" stroke-width="2.77364622" transform="translate(20.9612, 3.0763) scale(-1, 1) rotate(18) translate(-20.9612, -3.0763)"></line>
+                        <line x1="24.3794313" y1="16.3287709" x2="16.6341017" y2="19.0258388" id="路径-5" stroke-width="2.37741105"></line>
+                        <path d="M3.26472489,1.61982886 C2.15269047,3.48227738 2.15338846,4.99429122 3.26681888,6.1558704 C5.08302872,7.37131462 4.94444342,8.51176059 2.85106296,9.5772083" id="路径-4备份-4" stroke-width="1.5849407" transform="translate(3.4818, 5.5985) scale(-1, 1) rotate(43) translate(-3.4818, -5.5985)"></path>
+                        <line x1="16.701992" y1="31.2683928" x2="18.6487943" y2="35.2653451" id="路径-5备份-5" stroke-width="0.924548741" transform="translate(17.6754, 33.2669) scale(-1, 1) rotate(18) translate(-17.6754, -33.2669)"></line>
+                        <line x1="6.20987998" y1="21.5389148" x2="9.08777644" y2="18.5718131" id="路径-5备份-10" stroke-width="1.5849407" transform="translate(7.6488, 20.0554) scale(-1, 1) rotate(18) translate(-7.6488, -20.0554)"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
