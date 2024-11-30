@@ -159,6 +159,7 @@ button:active {
   height: 100%;
   padding: 5% 0;
   box-sizing: border-box;
+  flex-direction: column;
 }
 .video-box {
   /* height: 60vh */

@@ -194,7 +194,7 @@
   background-image: url('image/bg1.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 1920px 940px;
   width: 100vw;
   height: auto;
 }
@@ -696,7 +696,7 @@
 .block_50 {
   width: 55.21vw;
   height: 14.8vw;
-  margin: 5.2vw 0 0 16.66vw;
+  margin: 5.2vw 0 11vw 16.66vw;
 }
 
 .text_302 {
@@ -764,7 +764,7 @@
   height: 1.2vw;
   /* margin: 0.83vw 0 0 48.64vw; */
   position: absolute;
-  bottom: -6vw;
+  top: calc(47vw + 90px);
 }
 
 .text_32 {

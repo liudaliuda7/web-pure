@@ -12,58 +12,74 @@ document.addEventListener("DOMContentLoaded", (event) => {
     */
 
     // 视频放大动画start
+    /** 初始化时设置text_43的显示状态 */
+    gsap.set(".text_43", {
+      opacity: 1
+    })
+
+    /** 初始化时设置视频不播放 */
+    const videoBg = document.querySelector("#video-bg")
+    videoBg.autoplay = false
+    videoBg.loop = false
+    videoBg.currentTime = 0
+    videoBg.pause()
+
+    setTimeout(() => {
+      // 进入区域时重置状态
+      videoBg.currentTime = 0
+      videoBg.pause()
+      gsap.set(".text_43", { opacity: 1 })
+    }, 3000);
+
     let o = gsap.timeline({
       scrollTrigger: {
-        trigger: ".video-section", //当前动画触发的元素
+        trigger: ".video-section",
         start: "top top",
         end: "40%",
-        pin: ".video-section", //钉住元素的位置
-        scrub: true, //是否将动画效果链接到滚动条，随着滚动条平滑处理；如果是false（默认），随着元素出现在视窗内，直接触发动画，如果是true，则平滑动画
-        markers: false //是否进行标记
+        pin: ".video-section",
+        scrub: true,
+        markers: false
       }
     })
+
     o.from(".video-box", {
-        scale: .1,
-        ease: "power1.in"
-    }),
-    o.to(".video-box", {
-        scale: 1,
-        ease: "power1.in",
-        onComplete: () => {
-            gsap.to(".text_43", {
-                opacity: 0,
-                ease: "power1.in",
-                onComplete: ()=> {
-                    const videoBg = document.querySelector("#video-bg")
-                    videoBg.loop = false
-                    videoBg.currentTime = 0
-                    videoBg.play()
-                    videoBg.addEventListener('ended', function() {
-                        videoBg.pause()
-                    })
-                }
-            })
-        },
-        onReverseComplete: () => {
-            // 动画反向播放完成时，显示文字
-            gsap.to(".text_43", {
-                opacity: 1,
-                ease: "power1.in",
-                onComplete: ()=> {
-                  const videoBg = document.querySelector("#video-bg")
-                  videoBg.currentTime = 0
-              }
-            })
-        }
+      scale: .1,
+      ease: "power1.in",
+      onStart: () => {
+        // 确保视频在缩小状态时不播放
+        videoBg.pause()
+        videoBg.currentTime = 0
+        gsap.set(".text_43", { opacity: 1 })
+      },
+      onComplete: () => {
+        // 视频缩小完成后显示文字
+        gsap.set(".text_43", { opacity: 1 })
+      }
     })
-  //   o.to(".text_43", {
-  //     opacity: 0,
-  //     ease: "power1.in",
-  //     onComplete: ()=>{
-  //       const videoBg = document.querySelector("#video-bg")
-  //       videoBg.play()
-  //     }
-  // }, '-=1')
+    o.to(".video-box", {
+      scale: 1,
+      ease: "power1.in",
+      onComplete: () => {
+        gsap.to(".text_43", {
+          opacity: 0,
+          ease: "power1.in",
+          onComplete: () => {
+            videoBg.play()
+          }
+        })
+      },
+      onReverseComplete: () => {
+        // 向上滚动时恢复原状态
+        gsap.to(".text_43", {
+          opacity: 1,
+          ease: "power1.in",
+          onComplete: () => {
+            videoBg.currentTime = 0
+            videoBg.pause() // 确保视频暂停
+          }
+        })
+      }
+    })
     // 视频放大动画end
 
     // 图片抽取动画start
@@ -82,7 +98,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power1.in",
         scale: 1.1,
         rotate: 90,
-        translateY: -6000,
+        translateY: -2000,
         duration: 6,
         onComplete: () => {
           pageNumEl.innerHTML = '02'
@@ -101,7 +117,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -6000,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '03'
@@ -119,7 +135,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -6000,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '04'
@@ -137,7 +153,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power1.in",
       scale: 1.1,
       rotate: 90,
-      translateY: -6000,
+      translateY: -2000,
       duration: 6,
       onComplete: () => {
         pageNumEl.innerHTML = '05'
