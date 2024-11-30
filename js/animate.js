@@ -1,4 +1,3 @@
-// use a script tag or an external JS file
 document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
 
@@ -27,18 +26,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
         scale: .1,
         ease: "power1.in"
     }),
-    o.to("video-box", {
+    o.to(".video-box", {
         scale: 1,
-        ease: "power1.in"
+        ease: "power1.in",
+        onComplete: () => {
+            gsap.to(".text_43", {
+                opacity: 0,
+                ease: "power1.in",
+                onComplete: ()=> {
+                    const videoBg = document.querySelector("#video-bg")
+                    videoBg.loop = false
+                    videoBg.currentTime = 0
+                    videoBg.play()
+                    videoBg.addEventListener('ended', function() {
+                        videoBg.pause()
+                    })
+                }
+            })
+        },
+        onReverseComplete: () => {
+            // 动画反向播放完成时，显示文字
+            gsap.to(".text_43", {
+                opacity: 1,
+                ease: "power1.in",
+                onComplete: ()=> {
+                  const videoBg = document.querySelector("#video-bg")
+                  videoBg.currentTime = 0
+              }
+            })
+        }
     })
-    o.to(".text_43", {
-      opacity: 0,
-      ease: "power1.in",
-      onComplete: ()=>{
-        const videoBg = document.querySelector("#video-bg")
-        videoBg.play()
-      }
-  }, '-=1')
+  //   o.to(".text_43", {
+  //     opacity: 0,
+  //     ease: "power1.in",
+  //     onComplete: ()=>{
+  //       const videoBg = document.querySelector("#video-bg")
+  //       videoBg.play()
+  //     }
+  // }, '-=1')
     // 视频放大动画end
 
     // 图片抽取动画start

@@ -31,7 +31,7 @@ window.api = {
     })
   },
 
-  /** 获取投票数列表 
+  /** 获取投票数列表
    * @returns {Promise<{list: Array<{id: number, num: string, activityType: string, description: string}>}>}
   */
   getVoteList() {
@@ -66,7 +66,10 @@ window.api = {
   lottery() {
     return request({
       url: '/lottery',
-      method: 'get'
+      method: 'post',
+      data: {
+        activityType: 'care_2024'
+      }
     })
   },
 
