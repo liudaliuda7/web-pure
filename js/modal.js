@@ -7,7 +7,7 @@ function openModal(value) {
 
   // 显示遮罩和弹窗
   modal.style.display = 'flex';
-  modalContent.style.display = 'flex';
+  // modalContent.style.display = 'block';
 
   // 添加遮罩点击事件
   modal.onclick = function(e) {
@@ -23,6 +23,7 @@ function openModal(value) {
     modalContent.classList.add('show');
   });
 }
+// openModal('.discountCode')
 
 function closeModal() {
   const modal = document.querySelector('.modal');
