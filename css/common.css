@@ -69,42 +69,42 @@ button:active {
 }
 @font-face {
   font-family: 'D-DINCondensed-Bold'; /* 自定义字体名称 */
-  src: url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.otf') format('otf'),
-    /* 字体文件路径 */ url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.ttf') format('ttf'),
-    url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff') format('woff'),
-    url('font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff2') format('woff2');
+  src: url('../font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.otf') format('otf'),
+    /* 字体文件路径 */ url('../font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.ttf') format('ttf'),
+    url('../font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff') format('woff'),
+    url('../font/D-DIN-Condensed-Bold/D-DINCondensed-Bold.woff2') format('woff2');
   font-weight: normal; /* 字体粗细 */
   font-style: normal; /* 字体样式 */
 }
 @font-face {
   font-family: 'D-DINCondensed'; /* 自定义字体名称 */
-  src: url('font/D-DIN-Condensed-Bold/D-DINCondensed.otf') format('otf'),
-    /* 字体文件路径 */ url('font/D-DIN-Condensed-Bold/D-DINCondensed.ttf') format('ttf'),
-    url('font/D-DIN-Condensed-Bold/D-DINCondensed.woff') format('woff'),
-    url('font/D-DIN-Condensed-Bold/D-DINCondensed.woff2') format('woff2');
+  src: url('../font/D-DIN-Condensed-Bold/D-DINCondensed.otf') format('otf'),
+    /* 字体文件路径 */ url('../font/D-DIN-Condensed-Bold/D-DINCondensed.ttf') format('ttf'),
+    url('../font/D-DIN-Condensed-Bold/D-DINCondensed.woff') format('woff'),
+    url('../font/D-DIN-Condensed-Bold/D-DINCondensed.woff2') format('woff2');
   font-weight: normal; /* 字体粗细 */
   font-style: normal; /* 字体样式 */
 }
 @font-face {
   font-family: 'D-DINExp-Bold';
-  src: url('font/D-DIN-Condensed-Bold/D-DINExp-Bold.woff2') format('woff2'),
-       url('font/D-DIN-Condensed-Bold/D-DINExp-Bold.woff') format('woff'),
-       url('font/D-DIN-Condensed-Bold/D-DINExp-Bold.ttf') format('truetype');
+  src: url('../font/D-DIN-Condensed-Bold/D-DINExp-Bold.woff2') format('woff2'),
+       url('../font/D-DIN-Condensed-Bold/D-DINExp-Bold.woff') format('woff'),
+       url('../font/D-DIN-Condensed-Bold/D-DINExp-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'D-DINExp';
-  src: url('font/D-DIN-Condensed-Bold/D-DINExp.woff2') format('woff2'),
-       url('font/D-DIN-Condensed-Bold/D-DINExp.woff') format('woff'),
-       url('font/D-DIN-Condensed-Bold/D-DINExp.ttf') format('truetype');
+  src: url('../font/D-DIN-Condensed-Bold/D-DINExp.woff2') format('woff2'),
+       url('../font/D-DIN-Condensed-Bold/D-DINExp.woff') format('woff'),
+       url('../font/D-DIN-Condensed-Bold/D-DINExp.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'LaBelleAurore';
-  src: url('font/La_Belle_Aurore/LaBelleAurore-Regular.ttf') format('truetype');
+  src: url('../font/La_Belle_Aurore/LaBelleAurore-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

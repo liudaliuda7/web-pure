@@ -191,7 +191,7 @@
 }
 
 .box_2 {
-  background-image: url('image/bg1.webp');
+  background-image: url('../image/bg1.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1920px 940px;
@@ -460,7 +460,7 @@
 }
 
 .group_95 {
-  background-image: url('image/02-1@2x.jpg');
+  background-image: url('../image/02-1@2x.jpg');
   width: 88.55vw;
   height: 46.88vw;
   background-repeat: no-repeat;
@@ -574,7 +574,7 @@
 
 .box_3 {
   height: 12.06vw;
-  background: url('image/rotatwBg.png') -0.37vw -0.37vw
+  background: url('../image/rotatwBg.png') -0.37vw -0.37vw
     no-repeat;
   background-size: 28.95vw 10.78vw;
   width: 29.23vw;
