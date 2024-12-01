@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger)
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
     /**
     * fromTo里第一个对象是开始的状态第二个动画是你要执行的状态
@@ -216,5 +216,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }, '<')
     // 第二屏文字淡入淡出动效end
 
+    // block_15 自动滚入视图
+    gsap.to(".block_15", {
+      scrollTrigger: {
+        trigger: ".block_15", // 触发动画的元素
+        start: "top bottom", // 当 block_15 的顶部到达视口底部时触发
+        end: "bottom top", // 当 block_15 的底部到达视口顶部时结束
+        scrub: true,
+        onEnter: () => {
+          gsap.to(window, {
+            scrollTo: ".block_15", // 滚动到 block_15
+            duration: 1, // 滚动动画持续时间
+            ease: "power1.inOut"
+          });
+        },
+        onEnterBack: () => {
+          gsap.to(window, {
+            scrollTo: ".block_15", // 向上滚动时也滚动到 block_15
+            duration: 1,
+            ease: "power1.inOut"
+          });
+        }
+      }
+    });
+    // group_103 自动滚入视图
  });
 

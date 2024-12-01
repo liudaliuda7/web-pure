@@ -232,22 +232,37 @@ document.addEventListener('scroll', function() {
 
 // document.addEventListener('scroll', function() {
 //   const block15 = document.querySelector('.block_15');
-//   const block60 = document.querySelector('.block_60');
-//   const rect15 = block15.getBoundingClientRect();
-//   const vwToPx = window.innerWidth * 0.091; // 9.1vw 转换为像素
+//   const rect = block15.getBoundingClientRect();
+//   const windowHeight = window.innerHeight;
 
-//   // 当 block_15 的顶部触碰到可视区域顶部时
-//   if (rect15.top <= 0) {
-//     block60.style.position = 'fixed';
-//     block60.style.top = `${vwToPx}px`;
-//     block60.style.left = '0';
+//   // 计算 block_15 的中心位置
+//   const blockCenter = rect.top + rect.height / 2;
+
+//   // 计算视口的中心位置
+//   const viewportCenter = windowHeight / 2;
+
+//   // 当 block_15 的中心在视口的中心时触发滚动
+//   if (blockCenter < viewportCenter && rect.top > 0) {
+//     // 禁用鼠标滚动
+//     document.body.style.overflow = 'hidden';
+
+//     // 平滑滚动到 block_15 的顶部
+//     block15.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+//     // 恢复鼠标滚动
+//     setTimeout(() => {
+//       document.body.style.overflow = '';
+//     }, 1000); // 1秒后恢复滚动
 //   }
 
-//   // 当 block_15 的底部触碰到可视区域底部时
-//   if (rect15.bottom >= window.innerHeight) {
-//     block60.style.position = 'fixed';
-//     block60.style.top = `${window.innerHeight - rect60.height - vwToPx}px`;
-//     block60.style.left = '0';
+//   // 禁止 block_15 内部的滚动
+//   if (rect.bottom > windowHeight) {
+//     block15.addEventListener('wheel', preventScroll, { passive: false });
+//   } else {
+//     block15.removeEventListener('wheel', preventScroll);
 //   }
 // });
 
+// function preventScroll(event) {
+//   event.preventDefault();  // 阻止默认滚动行为
+// }

@@ -213,16 +213,28 @@
 .page .text_54 {
   width: auto;
 }
+.page .block_15::-webkit-scrollbar {
+  display: none;
+  /* 对于 Chrome, Safari 和 Opera */
+}
 .page .block_15 {
+  position: relative;
   display: flex;
   align-items: flex-start;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 .page .block_15 .group_17 {
   overflow-y: scroll;
-  height: 100%;
+  height: auto;
 }
 .page .block_15 .block_60 {
-  margin-top: 9.1vw;
+  position: sticky;
+  top: 9.1vw;
+  left: 0;
+  margin: 0;
 }
 .page .block_15 .block_60 .group_16 {
   background-color: #A7F387;

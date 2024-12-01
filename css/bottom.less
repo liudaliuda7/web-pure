@@ -253,15 +253,26 @@
     width: auto;
   }
 
+  .block_15::-webkit-scrollbar {
+    display: none; /* 对于 Chrome, Safari 和 Opera */
+  }
   .block_15 {
+    position: relative;
     display: flex;
     align-items: flex-start;
+    overflow-y: scroll;
+    height: 100vh;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     .group_17 {
       overflow-y: scroll;
-      height: 100%;
+      height: auto;
     }
     .block_60 {
-      margin-top: 9.1vw;
+      position: sticky;
+      top: 9.1vw;
+      left: 0;
+      margin: 0;
       .group_16  {
         background-color: #A7F387;
         .text-wrapper_18 {
