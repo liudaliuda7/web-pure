@@ -46,8 +46,7 @@ async function renderSignature() {
     });
   });
 
-
-  const container = document.getElementById('signature-container');
+  const container = document.querySelector('.group_39-content .content');
   const maxRows = 6;
   const itemsPerRow = 5;
 
@@ -85,20 +84,22 @@ async function renderSignature() {
 
     container.appendChild(row);
   }
-  
-  // 启动滚动动画
-  signWall.style.animation = 'scroll-right 10s linear infinite';
+// 启动滚动动画
+  // const signWallContent = document.querySelector('.group_39-content');
+  // signWallContent.style.animation = 'scroll-content 10s linear infinite';
+  const clone = container.cloneNode(true);
+  container.parentNode.appendChild(clone);
 }
-
-renderSignature()
+// renderSignature();
 
 document.addEventListener('DOMContentLoaded', function () {
-  // 获取头像容器和选中标记
+  renderSignature();
+
   const avatarContainer = document.querySelector('.box_17');
   const checkmark = document.querySelector('.thumbnail_6');
   const nameInput = document.querySelector('.text-input');
   const confirmButton = document.querySelector('.text-wrapper_29');
-  const signWall = document.querySelector('.group_39');
+  const signWall = document.querySelector('.group_39-content .content');
 
   // 获取所有头像元素（第一级子元素）
   const avatars = Array.from(avatarContainer.children);
@@ -121,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
     selectedAvatar.appendChild(checkmark);
   }
 
-  // 添加确认按钮点击事件
   confirmButton.addEventListener('click', function () {
     const name = nameInput.value.trim();
     if (!name) {
@@ -169,7 +169,12 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('没有可用的行，无法插入新签名');
     }
 
-    // 清空输入框
+    // 复制新签名到克隆的内容中
+    const clonedRows = signWall.nextElementSibling.querySelectorAll('.group_110');
+    if (clonedRows.length > 0) {
+      clonedRows[middleIndex].appendChild(newSignature.cloneNode(true));
+    }
+
     nameInput.value = '';
 
     // 触发动画

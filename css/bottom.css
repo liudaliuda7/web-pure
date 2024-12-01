@@ -101,39 +101,39 @@
   /* 添加背景图片样式 */
 }
 .page .group_39 .block_63 {
-  background-image: url('image/9-2@4x.png');
+  background-image: url('../image/9-2@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_64 {
-  background-image: url('image/9-3@4x.png');
+  background-image: url('../image/9-3@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_65 {
-  background-image: url('image/9-4@4x.png');
+  background-image: url('../image/9-4@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_66 {
-  background-image: url('image/9-5@4x.png');
+  background-image: url('../image/9-5@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_67 {
-  background-image: url('image/9-6@4x.png');
+  background-image: url('../image/9-6@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_68 {
-  background-image: url('image/9-7@4x.png');
+  background-image: url('../image/9-7@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_69 {
-  background-image: url('image/9-8@4x.png');
+  background-image: url('../image/9-8@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_70 {
-  background-image: url('image/9-9@4x.png');
+  background-image: url('../image/9-9@4x.png');
   background-size: 100%;
 }
 .page .group_39 .block_71 {
-  background-image: url('image/9-10@4x.png');
+  background-image: url('../image/9-10@4x.png');
   background-size: 100%;
 }
 .page .group_39::-webkit-scrollbar {
@@ -497,4 +497,24 @@
 }
 .page .text-group_81 .paragraph_5 {
   width: auto;
+}
+.page #signature-container {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.page .group_39-content {
+  display: inline-block;
+  white-space: nowrap;
+  position: absolute;
+  animation: scroll-content 10s linear infinite;
+  display: flex;
+}
+@keyframes scroll-content {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
