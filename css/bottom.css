@@ -182,10 +182,11 @@
 }
 .page .group_104 {
   margin-top: 0;
+  z-index: 20;
 }
 .page .box_91 {
   margin-top: 0;
-  transform: rotateY(180deg);
+  z-index: 10;
 }
 .page .card-container.flipped .group_104 {
   transform: rotateY(180deg);
@@ -213,7 +214,6 @@
   width: auto;
 }
 .page .block_15 {
-  height: 100vh;
   display: flex;
   align-items: flex-start;
 }
@@ -310,6 +310,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .page .block_15 .drawReward .draw {
   font-family: D-DINExp-Bold;

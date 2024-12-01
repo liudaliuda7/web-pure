@@ -195,31 +195,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-document.addEventListener('scroll', function () {
-  const cardContainer = document.querySelector('.card-container');
-  const rect = cardContainer.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  // 计算卡片的中心位置
-  const cardCenter = rect.top + rect.height / 2;
-
-  // 计算视口的中心位置
-  const viewportCenter = windowHeight / 2;
-
-  // 当卡片的中心在视口的中心时触发翻转
-  if (cardCenter < viewportCenter + 10 && cardCenter > viewportCenter - 10) {
-    if (!cardContainer.classList.contains('flipped')) {
-      cardContainer.classList.add('flipped');
-    }
-  } else {
-    if (cardContainer.classList.contains('flipped')) {
-      cardContainer.classList.remove('flipped');
-    }
-  }
-});
-
 document.addEventListener('scroll', function() {
-  const cardContainer = document.querySelector('.card-container');
+  const cardContainer = document.querySelector('.group_104');
   const rect = cardContainer.getBoundingClientRect();
   const windowHeight = window.innerHeight;
 
@@ -229,15 +206,48 @@ document.addEventListener('scroll', function() {
   // 计算视口的中心位置
   const viewportCenter = windowHeight / 2;
 
-  // 当卡片的中心在视口的中心时触发翻转
+  // 当卡片的中心在视口的中心时触发翻页
   if (cardCenter < viewportCenter) {
-      if (!cardContainer.classList.contains('flipped')) {
-          cardContainer.classList.add('flipped');
+      if (!cardContainer.classList.contains('paged')) {
+          cardContainer.classList.add('paged');
+          // 添加翻页效果的逻辑
+          cardContainer.style.transition = 'transform 0.5s ease, opacity 0.5s ease'; // 添加过渡效果
+          cardContainer.style.transform = 'translateX(100%)'; // 向左翻页
+          cardContainer.style.opacity = '0'; // 渐隐
+          setTimeout(() => {
+              cardContainer.style.visibility = 'hidden'; // 隐藏
+          }, 500); // 与过渡时间一致
       }
   } else {
-      if (cardContainer.classList.contains('flipped')) {
-          cardContainer.classList.remove('flipped');
+      if (cardContainer.classList.contains('paged')) {
+          cardContainer.classList.remove('paged');
+          // 恢复原始位置
+          cardContainer.style.transition = 'transform 0.5s ease, opacity 0.5s ease'; // 添加过渡效果
+          cardContainer.style.transform = 'translateX(0)';
+          cardContainer.style.opacity = '1'; // 渐显
+          cardContainer.style.visibility = 'visible'; // 显示
       }
   }
 });
+
+// document.addEventListener('scroll', function() {
+//   const block15 = document.querySelector('.block_15');
+//   const block60 = document.querySelector('.block_60');
+//   const rect15 = block15.getBoundingClientRect();
+//   const vwToPx = window.innerWidth * 0.091; // 9.1vw 转换为像素
+
+//   // 当 block_15 的顶部触碰到可视区域顶部时
+//   if (rect15.top <= 0) {
+//     block60.style.position = 'fixed';
+//     block60.style.top = `${vwToPx}px`;
+//     block60.style.left = '0';
+//   }
+
+//   // 当 block_15 的底部触碰到可视区域底部时
+//   if (rect15.bottom >= window.innerHeight) {
+//     block60.style.position = 'fixed';
+//     block60.style.top = `${window.innerHeight - rect60.height - vwToPx}px`;
+//     block60.style.left = '0';
+//   }
+// });
 

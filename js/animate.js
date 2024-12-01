@@ -174,5 +174,47 @@ document.addEventListener("DOMContentLoaded", (event) => {
     duration: 6,
   })
 
+    // 第二屏文字淡入淡出动效start
+    let t = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".group_95", //当前动画触发的元素
+        start: "top-=200px",
+        once: true,
+      }
+    })
+    t.from('.text-wrapper_7', {
+      opacity: 0,
+      ease: "power1.in",
+    }, '<')
+    t.to('.text-wrapper_7', {
+      opacity: 1,
+      ease: "power1.in",
+    }, '<')
+    t.from('.text-wrapper_8', {
+      opacity: 0,
+      ease: "power1.in",
+    }, '<')
+    t.to('.text-wrapper_8', {
+      opacity: 1,
+      ease: "power1.in",
+    }, '<')
+    t.from('.text_24', {
+      opacity: 0,
+      ease: "power1.in",
+    }, '<')
+    t.to('.text_24', {
+      opacity: 1,
+      ease: "power1.in",
+    }, '<')
+    t.from('.box_3', {
+      opacity: 0,
+      ease: "power1.in",
+    }, '<')
+    t.to('.box_3', {
+      opacity: 1,
+      ease: "power1.in",
+    }, '<')
+    // 第二屏文字淡入淡出动效end
+
  });
 

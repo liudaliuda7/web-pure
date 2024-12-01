@@ -595,7 +595,7 @@
 .text-wrapper_78 {
   width: 23.75vw;
   height: 4.17vw;
-  margin: 4.32vw 0 0 2.29vw;
+  margin: 4.32vw 0 0 2.7vw;
 }
 
 .text_299 {
@@ -629,7 +629,6 @@
   border-radius: 50%;
   width: 0.47vw;
   height: 0.47vw;
-  margin-left: 0.37vw;
 }
 
 .box_79 {
@@ -637,7 +636,7 @@
   border-radius: 50%;
   width: 0.47vw;
   height: 0.47vw;
-  margin: 1.14vw 0 0 0.15vw;
+  margin: 1.14vw 0 0 0;
 }
 
 .box_80 {
@@ -662,7 +661,7 @@
 
 .text-wrapper_79 {
   position: absolute;
-  left: 2.5vw;
+  left: 2.7vw;
   top: 2.82vw;
   width: 23.55vw;
   height: 4.12vw;
@@ -1252,7 +1251,7 @@
 .block_15 {
   background-color: rgba(224, 244, 174, 1);
   width: 100vw;
-  height: 127.61vw;
+  height: 99.61vw;
   margin-top: -0.05vw;
 }
 
@@ -3502,7 +3501,6 @@
 
 .group_120 {
   width: 100vw;
-  height: 64.59vw;
   margin-bottom: 0.06vw;
 }
 

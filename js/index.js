@@ -24,6 +24,8 @@ window.addEventListener('scroll', () => {
 
   if (rect.top <= 0) {
     menu.classList.add('menu-fixed') // 显示菜单
+  } else {
+    menu.classList.remove('menu-fixed') // 显示菜单
   }
 
   if(endRect.top < 100) {
