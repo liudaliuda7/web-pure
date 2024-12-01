@@ -131,7 +131,7 @@
             </div>
           </div>
         </section>
-        <div id="text_14" class="block_50 flex-row justify-between">
+        <div class="block_50 flex-row justify-between">
           <span class="text_302">ECO NANO SOLAR</span>
           <div class="text-group_68 flex-col justify-between">
             <span class="text_303"
@@ -225,7 +225,7 @@
             </div>
           </div>
         </section>
-        <section class="video-section"  id="text_15">
+        <section class="video-section">
           <div class="video-layout">
             <div class="video-wrapper">
               <div class="video-box">
@@ -245,7 +245,7 @@
           >
         </div>
       </div>
-      <div class="group_97 flex-col">
+      <div id="text_14" class="group_97 flex-col">
         <!-- <span class="paragraph_31 fontRepair fontBold">Inspiring Waves of<br />Sustainable Action</span> -->
         <span class="paragraph_31 fontRepair fontBold">ACTION POWER <br />FOR SOCIETY</span>
         <div class="section_22 flex-col"></div>
@@ -283,9 +283,9 @@
             <span class="text_54"
               >Pure Power is growing stronger with your support</span
             >
-            <div class="group_16 flex-col">
-              <div class="text-wrapper_18 flex-col">
-                <span class="text_55">798961</span>
+            <div id="progress-track" class="group_16 flex-col">
+              <div id="progress-bar" class="text-wrapper_18 flex-col">
+                <span class="text_55" id="current-progress">0</span>
               </div>
             </div>
             <div class="text-wrapper_86 flex-row">
@@ -359,43 +359,97 @@
                   The event is open to all VAPORESSO community members. To participate, users must have an active account on the VAPORESSO community platform. Submission grants VAPORESSO the right to showcase your content across promotional platforms without additional compensation.</span
                 >
               </div>
-              <div class="content rewards flex-col activity">
-                <img src="image/modal/cover.jpg" alt="">
-                <div>
-                  <div class="title">TIME TO <br> TEST YOUR LUCK</div>
-                  <div class="describe">Thank you for your unwavering support! It means the world to us. Now’s your chance to test your luck and claim some exciting rewards!</div>
-                  <div class="drawBtn">TEST YOUR LUCK</div>
-                </div>
-              </div>
-              <div class="content discountCode flex-col activity">
-                <img src="image/modal/discountCode.jpg" alt="">
-                <div>
-                  <div class="title">Congratulations！</div>
-                  <div class="describe">You’ve unlocked an exclusive reward — a 20% off discount code! Your code will be sent to your email shortly. Please provide a valid email address below to unlock your exclusive discount and discover the fantastic world of vaping.</div>
-                  <div class="discountCodeInfo">
-                    <div class="discountCodeText">XXXXXXXXXXXX <img src="image/modal/copy.png" alt=""></div>
-                    <div class="discountCodeDescribe">Your discount code has been successfully sent.</div>
+              <div class="rewards content">
+                <div class="flex-row activity">
+                  <img src="image/modal/cover.jpg" alt="">
+                  <div>
+                    <div class="title">TIME TO <br> TEST YOUR LUCK</div>
+                    <div class="describe">Thank you for your unwavering support! It means the world to us. Now’s your chance to test your luck and claim some exciting rewards!</div>
+                    <div class="drawBtn" onclick="lottery()">TEST YOUR LUCK</div>
                   </div>
-                  <div class="shopNow">Shop Now</div>
                 </div>
               </div>
-              <div class="content notWinning flex-col activity">
-                <img src="image/modal/notWinning.jpg" alt="">
-                <div>
-                  <div class="title">ALMOST THERE!</div>
-                  <div class="describe">There are still amazing prizes waiting in the pool. GOOD LUCK on your next try!</div>
-                </div>
-              </div>
-              <div class="content drone1 flex-col activity">
-                <img src="image/modal/drone1.jpg" alt="">
-                <div>
-                  <div class="title">Congratulations！</div>
-                  <div class="describe">You've claimed your exclusive reward — a DJI MINI 4 pro! Please fill in the real and effective email information below, we will contact you via email after the end of the event. </div>
-                  <div class="input-group">
-                    <input type="email" placeholder="Enter your email" class="email-input">
-                    <button class="confirm-btn">Confirm</button>
+              <div class="content discountCode ">
+                <div class="flex-col activity">
+                  <img src="image/modal/discountCode.jpg" alt="">
+                  <div>
+                    <div class="title">Congratulations！</div>
+                    <div class="describe">You’ve unlocked an exclusive reward — a 20% off discount code! Your code will be sent to your email shortly. Please provide a valid email address below to unlock your exclusive discount and discover the fantastic world of vaping.</div>
+                    <div class="input-group">
+                      <input type="email" placeholder="Enter your email" class="email-input">
+                      <button onclick="submitEmail('.discountCode')" class="confirm-btn">Confirm</button>
+                      <div class="tip err-tip">Invalid email</div>
+                      <div class="tip success-tip">Your prize information has been successfully recorded.</div>
+                    </div>
+                    <div class="discountCodeInfo-box" style="display: none;">
+                      <div class="discountCodeInfo">
+                        <div class="discountCodeText">
+                          <span id="textToCopy">XXXXXXXXXXXX</span>  
+                          <img onclick="copyText()" src="image/modal/copy.png" alt=""></div>
+                        <div class="discountCodeDescribe" style="display: none;">Your discount code has been successfully sent.</div>
+                      </div>
+                      <a href="https://store.vaporesso.com/pages/vaporesso-bfcm" target="_blank" class="shopNow">Shop Now</a>
+                    </div>
+                    
                   </div>
-                  <div class="tip">Your prize information has been successfully recorded.</div>
+                </div>
+              </div>
+              <!-- 没中奖 -->
+              <div class="content notWinning">
+                <div class="flex-col activity">
+                  <img src="image/modal/notWinning.jpg" alt="">
+                  <div>
+                    <div class="title">ALMOST THERE!</div>
+                    <div class="describe">There are still amazing prizes waiting in the pool. GOOD LUCK on your next try!</div>
+                  </div>
+                </div>
+              </div>
+              <!-- 一等奖 -->
+              <div class="content drone1">
+                <div class="flex-col activity">
+                  <img src="image/modal/drone1.jpg" alt="">
+                  <div>
+                    <div class="title">Congratulations！</div>
+                    <div class="describe">You've claimed your exclusive reward — a DJI MINI 4 pro! Please leave a valid email. We’ll contact you via email after the event ends to arrange the delivery. </div>
+                    <div class="input-group">
+                      <input type="email" placeholder="Enter your email" class="email-input">
+                      <button onclick="submitEmail('.drone1')" class="confirm-btn">Confirm</button>
+                      <div class="tip err-tip">Invalid email</div>
+                      <div class="tip success-tip">Your prize information has been successfully recorded.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 二等奖 -->
+              <div class="content drone2">
+                <div class="flex-col activity">
+                  <img src="image/modal/drone2.jpg" alt="">
+                  <div>
+                    <div class="title">Congratulations！</div>
+                    <div class="describe">You've claimed your exclusive reward — a Osmo Action 5 pro! Please leave a valid email. We’ll contact you via email after the event ends to arrange the delivery. </div>
+                    <div class="input-group">
+                      <input type="email" placeholder="Enter your email" class="email-input">
+                      <button onclick="submitEmail('.drone1')" class="confirm-btn">Confirm</button>
+                      <div class="tip err-tip">Invalid email</div>
+                      <div class="tip success-tip">Your prize information has been successfully recorded.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 三等奖 -->
+              <div class="content drone3">
+                <div class="flex-col activity">
+                  <img src="image/modal/drone3.jpg" alt="">
+                  <div>
+                    <div class="title">Congratulations！</div>
+                    <div class="describe">You've claimed your exclusive reward — a DJI NEO! Please leave a valid email. We’ll contact you via email after the event ends to arrange the delivery. </div>
+                    <div class="input-group" onclick="submitEmail('.drone1')">
+                      <input type="email" placeholder="Enter your email" class="email-input">
+                      <button class="confirm-btn">Confirm</button>
+                      <div class="tip err-tip">Invalid email</div>
+                      <div class="tip success-tip">Your prize information has been successfully recorded.</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -415,7 +469,7 @@
                   <span class="text_319">319980</span>
                   <span class="text_320">1 Support = 100 Pure Power</span>
                 </div>
-                <div class="box_84 flex-row" onclick="openModal('.drone1')">
+                <div id="vote-btn" class="box_84 flex-row" onclick="vote()">
                   <div class="image-text_37 flex-row justify-between">
                     <span class="text-group_74">Make an Impact</span>
                     <img
@@ -425,9 +479,11 @@
                     />
                   </div>
                 </div>
-                <div class="drawReward state">
-                   <span class="draw">Lucky Draw</span>
-                 </div>
+                <div id="draw-btn" style="display: none;">
+                  <div class="drawReward" onclick="openModal('.rewards')">
+                    <span class="draw">Lucky Draw</span>
+                  </div>
+                </div>
               </div>
               <div class="group_99 flex-col">
                 <div class="box_85 flex-col"></div>
@@ -538,7 +594,7 @@
           />
         </div>
       </div>
-      <div class="block_21 flex-col">
+      <div id="text_15" class="block_21 flex-col">
         <div class="text-group_81 flex-col justify-between">
           <!-- <span class="paragraph_5">Paving the Path Towards <br />A Brighter Tomorrow</span> -->
           <span class="paragraph_5">PAVING THE RATH <br> TOWARDS A BRIGHTHER <br /> TOMORROW</span>
@@ -681,7 +737,8 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="api/index.js"></script>
+    <!-- <script src="api/index.js"></script> -->
+    <script src="js/request.js"></script>
     <script src="index.js"></script>
     <script src="js/bottom.js"></script>
     <script src="js/animate.js"></script>

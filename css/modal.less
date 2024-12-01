@@ -9,6 +9,7 @@
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 999;
   &.show {
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -61,17 +62,18 @@
     opacity: 0;
     transition: all 0.3s ease-in-out;
     display: none;
-    > img {
+    img {
       width: 20vw;
       height: 23.44vw;
     }
     &.show {
+      display: block;
       opacity: 1;
       transition: all 0.3s ease-in-out;
     }
     .title {
       width: 18.23vw;
-      font-family: D-DINExp, D-DINExp;
+      font-family: D-DINExp-Bold, D-DINExp;
       font-weight: bold;
       font-size: 1.88vw;
       color: #000000;
@@ -81,7 +83,7 @@
     }
     .describe {
       width: 18.23vw;
-      font-family: D, D;
+      font-family: D-DINExp;
       font-weight: normal;
       font-size: 0.78vw;
       color: #000000;
@@ -109,6 +111,8 @@
       height: 2.6vw;
       line-height: 2.6vw;
       text-align: center;
+      font-size: 0.78vw;
+      font-family: D-DINExp-Bold, D-DINExp;
     }
     .drawBtn:hover {
       opacity: 0.9;
@@ -126,17 +130,23 @@
       justify-content: center;
       img {
         cursor: pointer;
+        width: 1.04vw;
+        height: 1.04vw;
+        margin-left: 1.15vw;
       }
       .discountCodeText {
-        font-family: D-DINExp, D-DINExp;
+        font-family: D-DINExp-Bold, D-DINExp;
         font-weight: bold;
         font-size: 1.15vw;
         color: #FFFFFF;
         line-height: 1.35vw;
         font-style: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .discountCodeDescribe {
-        font-family: D, D;
+        font-family: D-DINExp;
         font-weight: normal;
         font-size: 0.63vw;
         color: #03FE00;
@@ -155,12 +165,21 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
+      font-family: D-DINExp-Bold, D-DINExp;
+      font-size: 0.78rem;
+      color: #000000;
+      line-height: 1.09rem;
     }
   }
-  .drone1 {
+  .discountCode,
+  .drone1,  
+  .drone2,  
+  .drone3 {
     .input-group {
       display: flex;
       align-items: center;
+      position: relative;
     }
     
     .email-input {
@@ -187,13 +206,19 @@
       opacity: 0.9;
     }
     .tip {
-      font-family: D, D;
+      font-family: D-DINExp;
       font-weight: normal;
       font-size: 0.78vw;
       color: #00B000;
       line-height: 1.09vw;
       font-style: normal;
       margin-top: 0.63vw;
+      display: none;
+      position: absolute;
+      bottom: -1.2vw;
+    }
+    .tip.err-tip {
+      color: #FF0000;
     }
   }
   .rule {
@@ -205,7 +230,7 @@
       white-space: nowrap;
       line-height: 1.05vw;
       margin: 5.67vw 0 0 3.75vw;
-      font-family: D-DINExp, D-DINExp;
+      font-family: D-DINExp-Bold, D-DINExp;
       font-weight: bold;
       color: #000000;
       text-align: left;
@@ -220,7 +245,7 @@
       font-size: 0.78vw;
       line-height: 1.04vw;
       margin: 1.25vw 0 11.82vw 3.75vw;
-      font-family: D, D;
+      font-family: D-DINExp;
       font-weight: normal;
       color: #000000;
       text-align: left;
