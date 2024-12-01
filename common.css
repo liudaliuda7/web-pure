@@ -102,7 +102,12 @@ button:active {
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'LaBelleAurore';
+  src: url('font/La_Belle_Aurore/LaBelleAurore-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .pure-menu-box {
   position: absolute;
   top: 10.96vw;
