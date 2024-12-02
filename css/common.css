@@ -129,7 +129,6 @@ button:active {
   position: relative;
 }
 .img-slide-layout {
-  width: 1280px;
   height: 100vh;
   max-height: 100vh;
   margin: 0 auto;
@@ -167,7 +166,6 @@ button:active {
   height: 150vh;
 }
 .video-layout {
-  width: 1280px;
   height: 100vh;
   max-height: 100vh;
   position: relative;
