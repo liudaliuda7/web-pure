@@ -145,7 +145,7 @@ async function lottery(id, isAdd) {
     if(prizeId == 4) {
       discountCode.classList.add('show')
       rewards.classList.remove('show')
-      // textToCopy.innerText = res.token
+      textToCopy.innerText = 'VPCARE20'
       localStorage.setItem("web-vaporesso-lucy-people", true)
     }
   }).catch((err)=>{
