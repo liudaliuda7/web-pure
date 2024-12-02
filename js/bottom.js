@@ -20,16 +20,16 @@
 // 渲染签名强
 async function renderSignature() {
   const imgList = [
-    { avatar_id: 1, url: '../image/9-1@4x.png' },
-    { avatar_id: 2, url: '../image/9-2@4x.png' },
-    { avatar_id: 3, url: '../image/9-3@4x.png' },
-    { avatar_id: 4, url: '../image/9-4@4x.png' },
-    { avatar_id: 5, url: '../image/9-5@4x.png' },
-    { avatar_id: 6, url: '../image/9-6@4x.png' },
-    { avatar_id: 7, url: '../image/9-7@4x.png' },
-    { avatar_id: 8, url: '../image/9-8@4x.png' },
-    { avatar_id: 9, url: '../image/9-9@4x.png' },
-    { avatar_id: 10, url: '../image/9-10@4x.png' }
+    { avatar_id: 1, url: './image/9-1@4x.png' },
+    { avatar_id: 2, url: './image/9-2@4x.png' },
+    { avatar_id: 3, url: './image/9-3@4x.png' },
+    { avatar_id: 4, url: './image/9-4@4x.png' },
+    { avatar_id: 5, url: './image/9-5@4x.png' },
+    { avatar_id: 6, url: './image/9-6@4x.png' },
+    { avatar_id: 7, url: './image/9-7@4x.png' },
+    { avatar_id: 8, url: './image/9-8@4x.png' },
+    { avatar_id: 9, url: './image/9-9@4x.png' },
+    { avatar_id: 10, url: './image/9-10@4x.png' }
   ]
   // 示例数据
   let signatureData = [];

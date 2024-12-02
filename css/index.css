@@ -194,7 +194,7 @@
   background-image: url('../image/bg1.webp');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1920px 940px;
+  background-size: 2560px;
   width: 100vw;
   height: auto;
 }
@@ -465,6 +465,7 @@
   height: 46.88vw;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .text-wrapper_7 {
@@ -570,6 +571,7 @@
   white-space: nowrap;
   line-height: 4.43vw;
   margin-left: 10.32vw;
+  z-index: 10;
 }
 
 .box_3 {
@@ -578,7 +580,7 @@
     no-repeat;
   background-size: 28.95vw 10.78vw;
   width: 29.23vw;
-  margin: -0.05vw 0 0 10.26vw;
+  margin: -1.8vw 0 0 10vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -763,7 +765,7 @@
   height: 1.2vw;
   /* margin: 0.83vw 0 0 48.64vw; */
   position: absolute;
-  top: calc(47vw + 90px);
+  top: calc(42vw + 90px);
 }
 
 .text_32 {
@@ -1090,7 +1092,7 @@
   font-size: 0.93vw;
   font-family: D-DINExp-Bold;
   font-weight: normal;
-  text-align: right;
+  text-align: center;
   line-height: 1.31vw;
 }
 
@@ -1199,7 +1201,7 @@
 }
 
 .section_22 {
-  background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/b820e07adc434f73bb96648c98449676_mergeImage.png);
+  background-image: url('../image/05@2x.webp');
   width: 88.55vw;
   height: 46.88vw;
   margin: 5.2vw 0 0 5.72vw;
@@ -2089,7 +2091,7 @@
   border-radius: 25px;
   height: 2.61vw;
   width: 9.38vw;
-  margin: 0.31vw 0 1.3vw 1.56vw;
+  margin: 1.41vw 0 1.3vw 1.56vw;
 }
 
 .text_345 {
@@ -2285,7 +2287,8 @@
 
 .group_104 {
   border-radius: 23px;
-  background-image: url(https://lanhu-dds-backend.oss-cn-beijing.aliyuncs.com/merge_image/imgs/8920afc557ff43f0a1502a3e34964924_mergeImage.png);
+  background-image: url('../image/envelope.png');
+  background-repeat: no-repeat;
   width: 54.69vw;
   height: 33.34vw;
   border: 1px solid rgba(151, 151, 151, 1);
@@ -2811,7 +2814,7 @@
 
 .box_18 {
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 27px;
+  border-radius: 1.4vw;
   height: 2.82vw;
   border: 1px solid rgba(0, 0, 0, 0.8);
   margin-top: 1.1vw;
