@@ -8,6 +8,7 @@ function openModal(value) {
   // 显示遮罩和弹窗
   modal.style.display = 'block';
   // modalContent.style.display = 'block';
+  document.body.classList.add("no-scroll");
 
   // 添加遮罩点击事件
   modal.onclick = function(e) {
@@ -23,7 +24,7 @@ function openModal(value) {
     modalContent.classList.add('show');
   });
 }
-// openModal('.rule')
+// openModal('.discountCode')
 
 function closeModal() {
   const modal = document.querySelector('.modal');
@@ -41,6 +42,8 @@ function closeModal() {
   // 出现抽奖按钮
   voteBtn.style.display = 'block'
   drawBtn.style.display = 'none'
+
+  document.body.classList.remove("no-scroll"); // 恢复页面滚动
 
   // 等待动画完成后再隐藏元素
   setTimeout(() => {
