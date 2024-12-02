@@ -6,7 +6,7 @@ function openModal(value) {
   const modalContent = document.querySelector(modalOpen);
 
   // 显示遮罩和弹窗
-  modal.style.display = 'flex';
+  modal.style.display = 'block';
   // modalContent.style.display = 'block';
 
   // 添加遮罩点击事件
@@ -28,6 +28,10 @@ function openModal(value) {
 function closeModal() {
   const modal = document.querySelector('.modal');
   const modalContent = document.querySelector(modalOpen);
+  const modalContents = document.querySelectorAll(".modal .content")
+  modalContents.forEach(v=>[
+    v.classList.remove('.show')
+  ])
 
   // 移除show类触发关闭动画
   modal.classList.remove('show');
@@ -36,7 +40,7 @@ function closeModal() {
   // 等待动画完成后再隐藏元素
   setTimeout(() => {
     modal.style.display = 'none';
-    modalContent.style.display = 'none';
+    // modalContent.style.display = 'none';
     // 移除点击事件
     modal.onclick = null;
   }, 300); // 动画持续时间

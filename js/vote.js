@@ -1,6 +1,6 @@
 
 let voteCount = 0
-const totalAmount = 10000; // 总量
+const totalAmount = 1000000; // 总量
 const incrementValue = 100; // 每次增加的值
 // let incrementCount = 0; // 每次增加的次数
 // let prizeId = 1
@@ -38,6 +38,9 @@ function progress(isFirst){
   const progressTrack = document.getElementById("progress-track");
   const progressBar = document.getElementById("progress-bar");
   const currenProgress = document.getElementById("current-progress");
+  const power1 = document.querySelector(".text_319");
+  const power2 = document.querySelector(".text_333");
+  const power3 = document.querySelector(".text_342");
 
   // 获取 progressTrack 和 progressBar 的宽度
   const trackWidth = progressTrack.offsetWidth;
@@ -52,6 +55,9 @@ function progress(isFirst){
       increaseWidth = (incrementValue / totalAmount) * trackWidth;
   }
   currenProgress.innerText = addVoteValue
+  power1.innerText = addVoteValue
+  power2.innerText = addVoteValue
+  power3.innerText = addVoteValue
 
   // 实际要增加的宽度
   let width = increaseWidth
@@ -99,27 +105,31 @@ async function lottery(id, isAdd) {
   if(lotteryBtnDisable) return
   lotteryBtnDisable = true
   if(localStorage.getItem('web-vaporesso-lucy-people')) {
-      notWinning.classList.add('show')
-      rewards.classList.remove('show')
-      return
+    const modalContents = document.querySelectorAll(".modal .content")
+    modalContents.forEach(v=>[
+      v.classList.remove('.show')
+    ])
+    rewards.classList.remove('show')
+    notWinning.classList.add('show')
+    lotteryBtnDisable = false
+    return
   }
   await api.lottery().then(res=> {
     console.log('抽奖响应', res);
     // 0-未中奖 4-折扣码，1-一等奖，2-二等奖，3-三等奖
+    lotteryBtnDisable = false
     prizeId = res.prizeId
-    token = res.res
+    token = res.token
     // prizeId = 1 // 假数据
 
     if(prizeId == 0) {
       notWinning.classList.add('show')
       rewards.classList.remove('show')
       // reward.style.display = 'none'
-      localStorage.setItem("web-vaporesso-lucy-people", true)
     }
     if(prizeId == 1) {
       drone1.classList.add('show')
       rewards.classList.remove('show')
-      // reward.style.display = 'none'
       localStorage.setItem("web-vaporesso-lucy-people", true)
     }
     if(prizeId == 2) {
@@ -138,16 +148,18 @@ async function lottery(id, isAdd) {
       textToCopy.innerText = res.token
       localStorage.setItem("web-vaporesso-lucy-people", true)
     }
+  }).catch((err)=>{
+    lotteryBtnDisable = false
   })
 }
 
 function copyText() {
   const textToCopy = document.getElementById('textToCopy');
-  const copyTips = document.querySelector('.discountCodeDescribe');
+  // const copyTips = document.querySelector('.discountCodeDescribe');
   // 使用 clipboard API 复制文本
   navigator.clipboard.writeText(textToCopy.textContent).then(() => {
     console.log('Text copied to the clipboard');
-    copyTips.style.display = 'block'
+    // copyTips.style.display = 'block'
   }).catch(err => {
     console.error('Failed to copy: ', err);
   });
@@ -185,9 +197,9 @@ async function submitEmail(el) {
   const state = handleEmail(emailInput, errorTip)
   if(!state) return
   await api.submitPrize({
-    prizeId: 4,
+    prizeId: prizeId,
     Email: email,
-    token: 'a331f9d0-94fb-4b8f-a613-8d6cc87699a5'
+    token: token
   }).then((res)=>{
     comfirBtnDisable = false
     if(el == '.discountCode') {
