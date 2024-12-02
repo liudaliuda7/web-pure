@@ -204,3 +204,7 @@ button:active {
 .menu-fixed span {
   cursor: pointer;
 }
+/* 当弹窗显示时禁止页面滚动 */
+.no-scroll {
+  overflow: hidden; /* 禁止滚动 */
+}
