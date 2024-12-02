@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }
     })
 
-    o.from(".video-box", {
+    o.from(".page-video-box", {
       scale: .1,
       ease: "power1.in",
       onStart: () => {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         gsap.set(".text_43", { opacity: 1 })
       }
     })
-    o.to(".video-box", {
+    o.to(".page-video-box", {
       scale: 1,
       ease: "power1.in",
       onComplete: () => {
