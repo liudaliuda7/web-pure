@@ -33,3 +33,19 @@ window.addEventListener('scroll', () => {
   }
 })
 
+const textArea = document.querySelector('.text_12');
+
+textArea.addEventListener('mousemove', (e) => {
+    const rect = textArea.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    textArea.style.background = `radial-gradient(circle at ${x}px ${y}px, #FFC990 10%, #000 50%)`;
+    textArea.style.color = 'transparent';
+    textArea.style.backgroundClip = 'text';
+    textArea.style.webkitBackgroundClip = 'text';
+});
+
+textArea.addEventListener('mouseleave', () => {
+    textArea.style.color = 'black'; // 恢复默认文字颜色
+    textArea.style.background = 'none';
+});
