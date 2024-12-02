@@ -304,9 +304,7 @@
 
 .text_12 {
   width: 50.42vw;
-  height: 18.75vw;
   overflow-wrap: break-word;
-  color: rgba(0, 0, 0, 1);
   font-size: 6.25vw;
   font-family: D-DINCondensed-Bold;
   font-weight: normal;
@@ -314,11 +312,10 @@
   line-height: 6.78vw;
   margin: 9.37vw 0 0 24.79vw;
 }
-
 .text-wrapper_5 {
   width: 100vw;
   height: 12.61vw;
-  margin-top: 3.2vw;
+  margin-top: 2.2vw;
   border-top: 0.1vw #000 solid;
 }
 
