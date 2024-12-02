@@ -37,6 +37,11 @@ function closeModal() {
   modal.classList.remove('show');
   modalContent.classList.remove('show');
 
+  // 出现投票按钮
+  // 出现抽奖按钮
+  voteBtn.style.display = 'block'
+  drawBtn.style.display = 'none'
+
   // 等待动画完成后再隐藏元素
   setTimeout(() => {
     modal.style.display = 'none';

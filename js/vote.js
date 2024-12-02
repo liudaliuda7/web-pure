@@ -10,6 +10,7 @@ let voteBtnDisable = false
 let lotteryBtnDisable = false
 let comfirBtnDisable = false
 const voteBtn = document.querySelector("#vote-btn")
+const drawBtn = document.querySelector("#draw-btn")
 const drone1 = document.querySelector(".drone1")
 const drone2 = document.querySelector(".drone2")
 const drone3 = document.querySelector(".drone3")
@@ -86,17 +87,22 @@ async function vote(id, isAdd) {
   await api.updateVote(1001,true).then(res=> {
     console.log('投票响应:', res);
     progress()
+    voteBtnDisable = false
+    voteBtn.style.display = 'none'
+    drawBtn.style.display = 'block'
     // 出现抽奖按钮
-    gsap.to('#vote-btn', {
-        display: 'none',
-        opacity: 0,
-        ease: "power1.in",
-    })
-    gsap.to('#draw-btn', {
-        display: 'block',
-        opacity: 1,
-        ease: "power1.in",
-    },'>')
+    // gsap.to('#vote-btn', {
+    //     display: 'none',
+    //     opacity: 0,
+    //     ease: "power1.in",
+    // })
+    // gsap.to('#draw-btn', {
+    //     display: 'block',
+    //     opacity: 1,
+    //     ease: "power1.in",
+    // },'<')
+  }).catch((err)=>{
+    voteBtnDisable = false
   })
 }
 
