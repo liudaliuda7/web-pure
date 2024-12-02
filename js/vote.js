@@ -107,7 +107,7 @@ async function lottery(id, isAdd) {
   if(localStorage.getItem('web-vaporesso-lucy-people')) {
     const modalContents = document.querySelectorAll(".modal .content")
     modalContents.forEach(v=>[
-      v.classList.remove('.show')
+      v.classList.remove('show')
     ])
     rewards.classList.remove('show')
     notWinning.classList.add('show')

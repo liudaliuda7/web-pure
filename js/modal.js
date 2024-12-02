@@ -23,7 +23,7 @@ function openModal(value) {
     modalContent.classList.add('show');
   });
 }
-// openModal('.discountCode')
+// openModal('.rule')
 
 function closeModal() {
   const modal = document.querySelector('.modal');

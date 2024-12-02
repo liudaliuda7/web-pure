@@ -1264,6 +1264,9 @@
   width: 22.71vw;
   height: 26.1vw;
   margin: 15.1vw 0 0 16.19vw;
+
+  /* width: 436px;
+  height: 501px; */
 }
 
 .text-group_72 {
@@ -1342,7 +1345,7 @@
 .text-wrapper_18 {
   background-color: rgba(74, 207, 93, 1);
   height: 2.09vw;
-  width: 15.37vw;
+  width: 0;
 }
 
 .text_55 {
