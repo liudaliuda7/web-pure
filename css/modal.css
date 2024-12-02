@@ -9,6 +9,7 @@
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  z-index: 999;
 }
 .modal.show {
   opacity: 1;
@@ -37,6 +38,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 @keyframes modalFadeIn {
   from {
@@ -61,17 +63,18 @@
   transition: all 0.3s ease-in-out;
   display: none;
 }
-.modal .content > img {
+.modal .content img {
   width: 20vw;
   height: 23.44vw;
 }
 .modal .content.show {
+  display: block;
   opacity: 1;
   transition: all 0.3s ease-in-out;
 }
 .modal .content .title {
   width: 18.23vw;
-  font-family: D-DINExp, D-DINExp;
+  font-family: D-DINExp-Bold, D-DINExp;
   font-weight: bold;
   font-size: 1.88vw;
   color: #000000;
@@ -81,7 +84,7 @@
 }
 .modal .content .describe {
   width: 18.23vw;
-  font-family: D, D;
+  font-family: D-DINExp;
   font-weight: normal;
   font-size: 0.78vw;
   color: #000000;
@@ -107,6 +110,8 @@
   height: 2.6vw;
   line-height: 2.6vw;
   text-align: center;
+  font-size: 0.78vw;
+  font-family: D-DINExp-Bold, D-DINExp;
 }
 .modal .rewards .drawBtn:hover {
   opacity: 0.9;
@@ -123,17 +128,23 @@
 }
 .modal .discountCode .discountCodeInfo img {
   cursor: pointer;
+  width: 1.04vw;
+  height: 1.04vw;
+  margin-left: 1.15vw;
 }
 .modal .discountCode .discountCodeInfo .discountCodeText {
-  font-family: D-DINExp, D-DINExp;
+  font-family: D-DINExp-Bold, D-DINExp;
   font-weight: bold;
   font-size: 1.15vw;
   color: #FFFFFF;
   line-height: 1.35vw;
   font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal .discountCode .discountCodeInfo .discountCodeDescribe {
-  font-family: D, D;
+  font-family: D-DINExp;
   font-weight: normal;
   font-size: 0.63vw;
   color: #03FE00;
@@ -151,12 +162,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  font-family: D-DINExp-Bold, D-DINExp;
+  font-size: 0.78rem;
+  color: #000000;
+  line-height: 1.09rem;
 }
-.modal .drone1 .input-group {
+.modal .discountCode .input-group,
+.modal .drone1 .input-group,
+.modal .drone2 .input-group,
+.modal .drone3 .input-group {
   display: flex;
   align-items: center;
+  position: relative;
 }
-.modal .drone1 .email-input {
+.modal .discountCode .email-input,
+.modal .drone1 .email-input,
+.modal .drone2 .email-input,
+.modal .drone3 .email-input {
   flex: 1;
   width: 13.33vw;
   height: 2.6vw;
@@ -165,7 +188,10 @@
   font-size: 0.78vw;
   padding: 0 0.63vw;
 }
-.modal .drone1 .confirm-btn {
+.modal .discountCode .confirm-btn,
+.modal .drone1 .confirm-btn,
+.modal .drone2 .confirm-btn,
+.modal .drone3 .confirm-btn {
   width: 4.9vw;
   height: 2.6vw;
   background: #000000;
@@ -174,17 +200,32 @@
   cursor: pointer;
   font-size: 0.78vw;
 }
-.modal .drone1 .confirm-btn:hover {
+.modal .discountCode .confirm-btn:hover,
+.modal .drone1 .confirm-btn:hover,
+.modal .drone2 .confirm-btn:hover,
+.modal .drone3 .confirm-btn:hover {
   opacity: 0.9;
 }
-.modal .drone1 .tip {
-  font-family: D, D;
+.modal .discountCode .tip,
+.modal .drone1 .tip,
+.modal .drone2 .tip,
+.modal .drone3 .tip {
+  font-family: D-DINExp;
   font-weight: normal;
   font-size: 0.78vw;
   color: #00B000;
   line-height: 1.09vw;
   font-style: normal;
   margin-top: 0.63vw;
+  display: none;
+  position: absolute;
+  bottom: -1.2vw;
+}
+.modal .discountCode .tip.err-tip,
+.modal .drone1 .tip.err-tip,
+.modal .drone2 .tip.err-tip,
+.modal .drone3 .tip.err-tip {
+  color: #FF0000;
 }
 .modal .rule .text_1 {
   width: 13.44vw;
@@ -194,7 +235,7 @@
   white-space: nowrap;
   line-height: 1.05vw;
   margin: 5.67vw 0 0 3.75vw;
-  font-family: D-DINExp, D-DINExp;
+  font-family: D-DINExp-Bold, D-DINExp;
   font-weight: bold;
   color: #000000;
   text-align: left;
@@ -207,7 +248,7 @@
   font-size: 0.78vw;
   line-height: 1.04vw;
   margin: 1.25vw 0 11.82vw 3.75vw;
-  font-family: D, D;
+  font-family: D-DINExp;
   font-weight: normal;
   color: #000000;
   text-align: left;
