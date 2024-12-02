@@ -333,6 +333,7 @@
   text-align: center;
   line-height: 2.24vw;
   margin: 3.33vw 0 0 18.9vw;
+  cursor: pointer;
 }
 
 .text_14 {
@@ -346,6 +347,7 @@
   text-align: center;
   line-height: 2.24vw;
   margin: 3.33vw 0 0 8.12vw;
+  cursor: pointer;
 }
 
 .text_15 {
@@ -359,6 +361,7 @@
   text-align: center;
   line-height: 2.24vw;
   margin: 3.33vw 18.85vw 0 8.12vw;
+  cursor: pointer;
 }
 
 .image_6 {
